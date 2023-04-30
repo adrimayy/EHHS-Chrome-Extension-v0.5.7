@@ -1,0 +1,297 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+tr * {
+  user-select: none;
+}
+td * {
+  user-select: none;
+}
+button{
+  display: flex;
+  border-radius: 50%;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+button:hover{
+  cursor: pointer;
+}
+img{
+    box-sizing: border-box;
+    object-fit:contain;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    user-select: none;
+    user-zoom: none;
+    -webkit-user-select: none; /* Safari, Chrome */
+    -webkit-user-drag: none;
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE */
+    user-select: none; /* CSS3 */
+}
+div{
+    font-size: 20px;
+}
+.imgIcon{
+    height:50px;
+    width:50px;
+    object-fit:contain;
+    margin-left:10px;
+    margin-right:10px;
+}
+a{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    user-zoom: none;
+    -webkit-user-select: none; /* Safari, Chrome */
+    -webkit-user-drag: none;
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE */
+    user-select: none; /* CSS3 */
+}
+p{
+  font-family:Roboto, sans-serif;
+  font-size:20px;
+  user-select: none;
+}
+h1{
+  font-family:Roboto, sans-serif;
+  text-align:center;
+  user-select: none;
+  font-size:30px;
+
+}
+
+.draggable-table {
+  width: 45%;
+  border-collapse: collapse;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+}
+td{
+	display:flex;
+	align-items:center;
+	text-align:center;
+  width:100%;
+}
+.tables-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  margin-top:10px;
+}
+.draggable-table .draggable-table__drag {
+  font-size: 0.95em;
+  font-weight: normal;
+  position: absolute;
+  width: 45%;
+  text-indent: 20px;
+  border: 1px solid #f1f1f1;
+  z-index: 10;
+  cursor: grabbing;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.05);
+  opacity: 1;
+  pointer-events: none;
+}
+
+.draggable-table thead th {
+  height: 25px;
+  font-weight: bold;
+  padding: 10px;
+  user-select: none;
+}
+
+.draggable-table tbody tr {
+  cursor: grab;
+  display:flex;
+  align-items:center;
+}
+
+.draggable-table tbody tr:active {
+  cursor: grabbing;
+  display:flex;
+}
+
+.draggable-table tbody tr td {
+  font-size: 0.95em;
+  font-weight: normal;
+  text-indent: 20px;
+  padding: 10px;
+  user-select: none;
+  border-top: 1px solid whitesmoke;
+}
+
+.draggable-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.draggable-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.draggable-table tbody tr.is-dragging {
+  background: #f1c40f;
+}
+
+.draggable-table tbody tr.is-dragging td {
+  color: #ffe683;
+}
+.topNavContainer{
+    display:flex;
+    width:100%;
+    height:45px;
+    background-color:white;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+    align-items:center;
+    justify-content:center;
+}
+#topNavTitle{
+  color:#7A0C0D;
+}
+.slidecontainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#sliderValue{
+  color: #7A0C0D;
+  font-weight: bold;
+  margin-left: 10px;
+  user-select: none;
+}
+.slider {
+  appearance: none;
+  width: 125px;
+  height: 25px;
+  background: gray;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-left: 10px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #7A0C0D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #7A0C0D;
+  cursor: pointer;
+}
+
+#linkPerRowText {
+  color: #7A0C0D;
+  font-weight: bold;
+  font-size: 22px;
+}
+#resetButton{
+  background-color: #7A0C0D;
+  font-weight: bold;
+  margin-left: 10px;
+  user-select: none;
+  display: flex;
+  border-radius: 8px;
+  border: 2px solid #7A0C0D;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin-left: auto;
+
+}
+#resetButton:hover{
+  background-color: white;
+  color: #7A0C0D;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color:#a8a4a4;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: gray;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #7A0C0D;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
