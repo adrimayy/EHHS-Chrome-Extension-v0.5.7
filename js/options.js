@@ -92,7 +92,7 @@ let removedLinks = [
 
     // Study Guides
     ["AP Study Guides", "https://knowt.io/", "/images/knowt.png"],
-    ["SparkNotes", "https://www.sparknotes.com/", "/images/sparkNotes.png"],
+    ["SparkNotes", "https://www.sparknotes.com/", "/images/sparknotes.png"],
     ["Shmoop", "https://www.shmoop.com/", "/images/shmoop.png"],
     ["Brainly", "https://brainly.com/", "/images/brainly.png"],
     ["Course Hero", "https://www.coursehero.com/", "/images/courseHero.png"],
