@@ -49,6 +49,7 @@ let removedLinks = [
     ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png"],
     ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png"],
     ["Udemy", "https://www.udemy.com/", "/images/udemy.png"],
+  
     // Libraries and Databases
     ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png"],
     ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png"],
@@ -73,6 +74,7 @@ let removedLinks = [
     ["GitHub", "https://github.com/", "/images/github.png"],
     
     // College and Application Resources
+    ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png"],
     ["Naviance", "https://student.naviance.com/main", "/images/naviance.png"],
     ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png"],
 
