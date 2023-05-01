@@ -299,6 +299,7 @@ chrome.storage.sync.get("sliderValue", function(data) {
       img.height = 50;
       img.style.marginRight = "10px";
   
+      img.setAttribute('data-url', url); // Add this line
       a.href = url; // Set the 'href' attribute of the 'a' element to the URL
       a.target = "_blank"; // Add this line to make the link open in a new tab
       a.appendChild(img); // Append the 'img' element to the 'a' element
