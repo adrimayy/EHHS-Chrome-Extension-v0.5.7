@@ -13,16 +13,13 @@
 
     // School-Related Resources
     ["EHHS", "https://www.easthamptonschools.org/highschool", "/images/bonac.png"],
+    ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png"],
     ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png"],
     ["EH Tech Support", "https://ehschools.mojohelpdesk.com/", "/images/support.png"],
     ["Virtual Bulletin", "https://docs.google.com/presentation/d/1T-idGOxDysnA_qrA0ilTapPdZNXiYt-09Ew1kL1AUbk/preview?slide=id.gb047d9a6b6_0_28", "/images/announcement.png"],
-
+    ["Naviance", "https://student.naviance.com/main", "/images/naviance.png"],
     // News
     ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png"],
-
-    // Study Guides and Online Learning Platforms
-    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png"],
-    ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png"],
 
     // College and Application Resources
     ["AP Classroom", "https://apstudents.collegeboard.org/", "/images/collegeBoard.png"],
@@ -35,11 +32,11 @@ let removedLinks = [
     ["Slides", "https://docs.google.com/presentation/u/0/", "/images/slides.png"],
     ["Sheets", "https://docs.google.com/spreadsheets/u/0/", "/images/sheets.png"],
     ["Keep", "https://keep.google.com/u/0/", "/images/keep.png"],
+    ["YouTube", "https://www.youtube.com/", "/images/youtube.png"],
     ["Calendar", "https://calendar.google.com/calendar/u/0/r", "/images/calendar.png"],
 
     // Educational Games/Tools
     ["EdX", "https://home.edx.org/", "/images/edX.png"],
-    ["YouTube", "https://www.youtube.com/", "/images/youtube.png"],
     ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png"],
     ["Delta Math", "https://www.deltamath.com/app/student", "/images/deltaMath.png"],
     ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png"],
@@ -49,6 +46,8 @@ let removedLinks = [
     ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png"],
     ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png"],
     ["Udemy", "https://www.udemy.com/", "/images/udemy.png"],
+  
+    ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png"],
   
     // Libraries and Databases
     ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png"],
@@ -72,11 +71,6 @@ let removedLinks = [
     ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png"],
     ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png"],
     ["GitHub", "https://github.com/", "/images/github.png"],
-    
-    // College and Application Resources
-    ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png"],
-    ["Naviance", "https://student.naviance.com/main", "/images/naviance.png"],
-    ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png"],
 
     // Music
     ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png"],
@@ -91,8 +85,10 @@ let removedLinks = [
     ["Duolingo", "https://www.duolingo.com/", "/images/duolingo.png"],
     ["Wordle","https://www.nytimes.com/games/wordle/index.html", "/images/wordle.png"],
     ["Seterra", "https://www.seterra.com/", "/images/seterra.png"],
-
-    // Study Guides
+  
+    // Study Guides and Online Learning Platforms
+    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png"],
+    ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png"],
     ["AP Study Guides", "https://knowt.io/", "/images/knowt.png"],
     ["SparkNotes", "https://www.sparknotes.com/", "/images/sparknotes.png"],
     ["Shmoop", "https://www.shmoop.com/", "/images/shmoop.png"],
