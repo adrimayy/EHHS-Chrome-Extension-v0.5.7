@@ -1,0 +1,44 @@
+<!-- This HTML file defines the structure of the options page of the web application. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="/css/options.css">
+  </head>
+<body>
+    <div class="topNavContainer">
+        <h1 id="topNavTitle">EAST HAMPTON HIGH SCHOOL</h1>
+    </div>
+    <div class="slidecontainer">
+      <p id = "linkPerRowText">Links per row:</p>
+      <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+      <span id="sliderValue"></span>
+
+
+
+      <button id="resetButton">Reset</button>
+    </div>
+    <label class="container">Add to the top of the table
+      <input type="checkbox" id="addToTopCheckbox">
+      <span class="checkmark"></span>
+    </label>
+<div class="tables-container">
+
+<table id="addedLinksTable" class="draggable-table">
+  <thead><tr><th>Added Links</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<table id="removedLinksTable" class="draggable-table">
+  <thead><tr><th>Removed Links</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+</div>
+    <script src="/js/options.js"></script>
+</body>
+</html>
+
