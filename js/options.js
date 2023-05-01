@@ -47,7 +47,7 @@ let removedLinks = [
     ["Blooket", "https://play.blooket.com/play", "/images/blooket.png"],
     ["Gimkit", "https://www.gimkit.com/join", "/images/gimkit.png"],
     ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png"],
-    ["EdPuzzle", "https://edpuzzle.com/", "/images/edPuzzle.png"],
+    ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png"],
     ["Udemy", "https://www.udemy.com/", "/images/udemy.png"],
     // Libraries and Databases
     ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png"],
@@ -70,7 +70,7 @@ let removedLinks = [
     ["p5.js", "https://editor.p5js.org/", "/images/p5.png"],
     ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png"],
     ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png"],
-    ["GitHub", "https://github.com/", "/images/gitHub.png"],
+    ["GitHub", "https://github.com/", "/images/github.png"],
     
     // College and Application Resources
     ["Naviance", "https://student.naviance.com/main", "/images/naviance.png"],
