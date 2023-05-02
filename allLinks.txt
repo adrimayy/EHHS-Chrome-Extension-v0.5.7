@@ -5,7 +5,7 @@
 
     ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
     ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png","color"],
-    ["Naviance", "https://student.naviance.com/main", "/images/naviance.png","color"],    
+    ["Naviance", "https://student.naviance.com/main", "/images/naviance.png","black"],    
 
     ["EHHS", "https://www.easthamptonschools.org/highschool", "/images/bonac.png","color"],
     ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png","black"],
@@ -30,7 +30,7 @@ let removedLinks = [
     // Educational Games/Tools
     ["EdX", "https://home.edx.org/", "/images/edX.png","black"],
     ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png","color"],
-    ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png","black"],
+    ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png","color"],
     ["Kahoot", "https://kahoot.it/", "/images/kahoot.png","color"],
     ["Blooket", "https://play.blooket.com/play", "/images/blooket.png","color"],
     ["Gimkit", "https://www.gimkit.com/join", "/images/gimkit.png","color"],
@@ -43,7 +43,7 @@ let removedLinks = [
     // Libraries and Databases
     ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png","black"],
     ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png","color"],
-    ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png","color"],
+    ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png","black"],
     ["LTV EH", "https://www.youtube.com/@LTVEastHampton", "/images/ltv.png","color"],
     ["NoodleTools", "https://my.noodletools.com/web2.0/projects.html", "/images/noodleTools.png","color"],
     ["EH Databases", "https://sites.google.com/ehschools.org/ehhslibrary/databases?pli=1", "/images/database.png","black"],
@@ -58,7 +58,7 @@ let removedLinks = [
 
     // Coding/Computer Science
     ["Code HS", "https://codehs.com/sections/3059537", "/images/codeHS.png","color"],
-    ["Code.org", "https://studio.code.org/home", "/images/code.png","color"],
+    ["Code.org", "https://studio.code.org/home", "/images/code.png","black"],
     ["p5.js", "https://editor.p5js.org/", "/images/p5.png","color"],
     ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png","color"],
     ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png","color"],
