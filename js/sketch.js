@@ -85,7 +85,7 @@ scale(height/250);
 scale(width/175);
 }
 
-background(255);
+background("#fbf9fa");
 
 textSize(13);
 
