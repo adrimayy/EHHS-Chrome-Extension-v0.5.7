@@ -1,0 +1,2 @@
+May 1st - v0.5.02: Added Dark Theme to the popup.html, updated the sketch.js to a simpler version with the exact same functionality
+May - v0.5.03: 
