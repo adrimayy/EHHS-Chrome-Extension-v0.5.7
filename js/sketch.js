@@ -5,6 +5,7 @@
 // Also fixed overlay of text at the bottom between periods.
 
 // Updated May 2023: 200 lines to 100 lines of code through the use of Open AI's GPT-4 LLM
+
 // Completed as part of the East Hampton HS - Javascript Coding course
 // Earliest version, by Alexandra Rutkowski,  Spring 2017
 // Tweaked a little for posting by Urban Reininger (her teacher)
