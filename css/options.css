@@ -231,6 +231,7 @@ td{
 .container {
   display: block;
   position: relative;
+  width:max-content;
   padding-left: 35px;
   margin-bottom: 20px;
   cursor: pointer;
