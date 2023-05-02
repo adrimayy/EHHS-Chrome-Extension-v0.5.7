@@ -15,7 +15,3 @@
           ["AP Classroom", "https://apstudents.collegeboard.org/", "/images/collegeBoard.png","black"],
           ["Delta Math", "https://www.deltamath.com/app/student", "/images/deltaMath.png","black"],
         ];
-        const defaultLinks = [
-          ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
-          ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png","color"],
-        ];
