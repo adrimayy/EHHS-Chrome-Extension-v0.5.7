@@ -18,28 +18,6 @@
   ];
 
 let removedLinks = [
-    // Google Suite Tools
-    ["Translate", "https://translate.google.com/", "/images/googleTranslate.png","color"],
-    ["Docs", "https://docs.google.com/document/u/0/", "/images/docs.png","color"],
-    ["Slides", "https://docs.google.com/presentation/u/0/", "/images/slides.png","color"],
-    ["Sheets", "https://docs.google.com/spreadsheets/u/0/", "/images/sheets.png","color"],
-    ["Keep", "https://keep.google.com/u/0/", "/images/keep.png","color"],
-    ["YouTube", "https://www.youtube.com/", "/images/youtube.png","color"],
-    ["Calendar", "https://calendar.google.com/calendar/u/0/r", "/images/calendar.png","color"],
-
-    // Educational Games/Tools
-    ["EdX", "https://home.edx.org/", "/images/edX.png","black"],
-    ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png","color"],
-    ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png","color"],
-    ["Kahoot", "https://kahoot.it/", "/images/kahoot.png","color"],
-    ["Blooket", "https://play.blooket.com/play", "/images/blooket.png","color"],
-    ["Gimkit", "https://www.gimkit.com/join", "/images/gimkit.png","color"],
-    ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png","color"],
-    ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png","color"],
-    ["Udemy", "https://www.udemy.com/", "/images/udemy.png","black"],
-  
-    ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png","color"],
-  
     // Libraries and Databases
     ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png","black"],
     ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png","color"],
@@ -49,39 +27,62 @@ let removedLinks = [
     ["EH Databases", "https://sites.google.com/ehschools.org/ehhslibrary/databases?pli=1", "/images/database.png","black"],
     ["JSTOR", "https://www.jstor.org/", "/images/jstor.png","color"],
 
-    //Phootgraphy and Art
-    ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
-
+    // Google Suite Tools
+    ["YouTube", "https://www.youtube.com/", "/images/youtube.png","color"],
+    ["Translate", "https://translate.google.com/", "/images/googleTranslate.png","color"],
+    ["Docs", "https://docs.google.com/document/u/0/", "/images/docs.png","color"],
+    ["Slides", "https://docs.google.com/presentation/u/0/", "/images/slides.png","color"],
+    ["Sheets", "https://docs.google.com/spreadsheets/u/0/", "/images/sheets.png","color"],
+    ["Keep", "https://keep.google.com/u/0/", "/images/keep.png","color"],
+    ["Calendar", "https://calendar.google.com/calendar/u/0/r", "/images/calendar.png","color"],
+    
     // News
     ["NY Times", "https://www.nytimes.com/", "/images/nyTimes.png","black"],
     ["Weather", "https://weather.com/en-BZ/weather/tenday/l/11937:4:US", "/images/weather.png","black"],
+    
+    // Science
+    ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png","color"],
+    ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png","color"],
+    ["AP Study Guides", "https://knowt.io/", "/images/knowt.png","color"],
 
-    // Coding/Computer Science
-    ["Code HS", "https://codehs.com/sections/3059537", "/images/codeHS.png","color"],
-    ["Code.org", "https://studio.code.org/home", "/images/code.png","black"],
-    ["p5.js", "https://editor.p5js.org/", "/images/p5.png","color"],
-    ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png","color"],
-    ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png","color"],
-    ["GitHub", "https://github.com/", "/images/github.png","black"],
+    // Educational Games/Tools
+    ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png","color"],
+    ["EdX", "https://home.edx.org/", "/images/edX.png","black"],
+    ["Udemy", "https://www.udemy.com/", "/images/udemy.png","black"],
+    ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png","color"],
 
     // Music
     ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","color"],
-
+    
+    //Phootgraphy and Art
+    ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
+    
     // Math and Calculator Tools
     ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png","color"],
     ["WolframAlpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png","color"],
     ["Desmos", "https://www.desmos.com/calculator", "/images/desmos.png","color"],
 
-    // Language and Writing
-    ["Grammarly", "https://www.grammarly.com/", "/images/grammarly.png","color"],
+    // Coding/Computer Science
+    ["GitHub", "https://github.com/", "/images/github.png","black"],
+    ["Code HS", "https://codehs.com/sections/3059537", "/images/codeHS.png","color"],
+    ["Code.org", "https://studio.code.org/home", "/images/code.png","black"],
+    ["p5.js", "https://editor.p5js.org/", "/images/p5.png","color"],
+    ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png","color"],
+    ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png","color"],
+    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png","color"],
+
+    // Live Classes and educational games
     ["Duolingo", "https://www.duolingo.com/", "/images/duolingo.png","color"],
+    ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png","color"],
+    ["Kahoot", "https://kahoot.it/", "/images/kahoot.png","color"],
+    ["Blooket", "https://play.blooket.com/play", "/images/blooket.png","color"],
+    ["Gimkit", "https://www.gimkit.com/join", "/images/gimkit.png","color"],
+    ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png","color"],
+    ["Grammarly", "https://www.grammarly.com/", "/images/grammarly.png","color"],
     ["Wordle","https://www.nytimes.com/games/wordle/index.html", "/images/wordle.png","color"],
     ["Seterra", "https://www.seterra.com/", "/images/seterra.png","color"],
-  
+
     // Study Guides and Online Learning Platforms
-    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png","color"],
-    ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png","color"],
-    ["AP Study Guides", "https://knowt.io/", "/images/knowt.png","color"],
     ["SparkNotes", "https://www.sparknotes.com/", "/images/sparknotes.png","color"],
     ["Shmoop", "https://www.shmoop.com/", "/images/shmoop.png","color"],
     ["Brainly", "https://brainly.com/", "/images/brainly.png","black"],
