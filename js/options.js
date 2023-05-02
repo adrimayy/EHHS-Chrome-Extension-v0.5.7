@@ -3,108 +3,103 @@
   "use strict";
 
   let addedLinks = [
-    // Scheduling and Organization
-    ["Schedule", "/html/clockPage.html", "/images/clock.png"],
+    ["Drive", "https://drive.google.com/drive/u/0/", "/images/drive.png","color"],
+    ["Gmail", "https://mail.google.com/mail/u/0/#inbox", "/images/gmail.png","color"],
+    ["Classroom", "https://classroom.google.com/", "/images/classroom.png","color"],
 
-    // Google Suite Tools
-    ["Gmail", "https://mail.google.com/mail/u/0/#inbox", "/images/gmail.png"],
-    ["Classroom", "https://classroom.google.com/", "/images/classroom.png"],
-    ["Drive", "https://drive.google.com/drive/u/0/", "/images/drive.png"],
+    ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
+    ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png","color"],
+    ["Naviance", "https://student.naviance.com/main", "/images/naviance.png","black"],    
 
-    // School-Related Resources
-    ["EHHS", "https://www.easthamptonschools.org/highschool", "/images/bonac.png"],
-    ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png"],
-    ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png"],
-    ["EH Tech Support", "https://ehschools.mojohelpdesk.com/", "/images/support.png"],
-    ["Virtual Bulletin", "https://docs.google.com/presentation/d/1T-idGOxDysnA_qrA0ilTapPdZNXiYt-09Ew1kL1AUbk/preview?slide=id.gb047d9a6b6_0_28", "/images/announcement.png"],
-    ["Naviance", "https://student.naviance.com/main", "/images/naviance.png"],
-    // News
-    ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png"],
+    ["EHHS", "https://www.easthamptonschools.org/highschool", "/images/bonac.png","color"],
+    ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png","black"],
+    ["Virtual Bulletin", "https://docs.google.com/presentation/d/1T-idGOxDysnA_qrA0ilTapPdZNXiYt-09Ew1kL1AUbk/preview?slide=id.gb047d9a6b6_0_28", "/images/announcement.png","black"],
+    
+    ["EH Tech Support", "https://ehschools.mojohelpdesk.com/", "/images/support.png","black"],
+    ["AP Classroom", "https://apstudents.collegeboard.org/", "/images/collegeBoard.png","black"],
+    ["Delta Math", "https://www.deltamath.com/app/student", "/images/deltaMath.png","black"],
 
-    // College and Application Resources
-    ["AP Classroom", "https://apstudents.collegeboard.org/", "/images/collegeBoard.png"],
-];
+  ];
 
 let removedLinks = [
-    // Google Suite Tools
-    ["Translate", "https://translate.google.com/", "/images/googleTranslate.png"],
-    ["Docs", "https://docs.google.com/document/u/0/", "/images/docs.png"],
-    ["Slides", "https://docs.google.com/presentation/u/0/", "/images/slides.png"],
-    ["Sheets", "https://docs.google.com/spreadsheets/u/0/", "/images/sheets.png"],
-    ["Keep", "https://keep.google.com/u/0/", "/images/keep.png"],
-    ["YouTube", "https://www.youtube.com/", "/images/youtube.png"],
-    ["Calendar", "https://calendar.google.com/calendar/u/0/r", "/images/calendar.png"],
-
-    // Educational Games/Tools
-    ["EdX", "https://home.edx.org/", "/images/edX.png"],
-    ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png"],
-    ["Delta Math", "https://www.deltamath.com/app/student", "/images/deltaMath.png"],
-    ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png"],
-    ["Kahoot", "https://kahoot.it/", "/images/kahoot.png"],
-    ["Blooket", "https://play.blooket.com/play", "/images/blooket.png"],
-    ["Gimkit", "https://www.gimkit.com/join", "/images/gimkit.png"],
-    ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png"],
-    ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png"],
-    ["Udemy", "https://www.udemy.com/", "/images/udemy.png"],
-  
-    ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png"],
-  
     // Libraries and Databases
-    ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png"],
-    ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png"],
-    ["LTV EH", "https://www.youtube.com/@LTVEastHampton", "/images/ltv.png"],
-    ["NoodleTools", "https://my.noodletools.com/web2.0/projects.html", "/images/noodleTools.png"],
-    ["EH Databases", "https://sites.google.com/ehschools.org/ehhslibrary/databases?pli=1", "/images/database.png"],
-    ["JSTOR", "https://www.jstor.org/", "/images/jstor.png"],
+    ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png","black"],
+    ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png","color"],
+    ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png","black"],
+    ["LTV EH", "https://www.youtube.com/@LTVEastHampton", "/images/ltv.png","color"],
+    ["NoodleTools", "https://my.noodletools.com/web2.0/projects.html", "/images/noodleTools.png","color"],
+    ["EH Databases", "https://sites.google.com/ehschools.org/ehhslibrary/databases?pli=1", "/images/database.png","black"],
+    ["JSTOR", "https://www.jstor.org/", "/images/jstor.png","color"],
 
-    //Phootgraphy and Art
-    ["Pixlr", "https://pixlr.com/", "/images/pixlr.png"],
-
+    // Google Suite Tools
+    ["Translate", "https://translate.google.com/", "/images/googleTranslate.png","color"],
+    ["Docs", "https://docs.google.com/document/u/0/", "/images/docs.png","color"],
+    ["Slides", "https://docs.google.com/presentation/u/0/", "/images/slides.png","color"],
+    ["Sheets", "https://docs.google.com/spreadsheets/u/0/", "/images/sheets.png","color"],
+    ["Keep", "https://keep.google.com/u/0/", "/images/keep.png","color"],
+    ["YouTube", "https://www.youtube.com/", "/images/youtube.png","color"],
+    ["Calendar", "https://calendar.google.com/calendar/u/0/r", "/images/calendar.png","color"],
+    
     // News
-    ["NY Times", "https://www.nytimes.com/", "/images/nyTimes.png"],
-    ["Weather", "https://weather.com/en-BZ/weather/tenday/l/11937:4:US", "/images/weather.png"],
+    ["NY Times", "https://www.nytimes.com/", "/images/nyTimes.png","black"],
+    ["Weather", "https://weather.com/en-BZ/weather/tenday/l/11937:4:US", "/images/weather.png","black"],
+    
+    // Educational Games/Tools
+    ["EdX", "https://home.edx.org/", "/images/edX.png","black"],
+    ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png","color"],
+    ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png","color"],
+    ["Kahoot", "https://kahoot.it/", "/images/kahoot.png","color"],
+    ["Blooket", "https://play.blooket.com/play", "/images/blooket.png","color"],
+    ["Gimkit", "https://www.gimkit.com/join", "/images/gimkit.png","color"],
+    ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png","color"],
+    ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png","color"],
+    ["Udemy", "https://www.udemy.com/", "/images/udemy.png","black"],
+    ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png","color"],
+  
+    //Phootgraphy and Art
+    ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
+    
+    // Music
+    ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","color"],
+    
+    // Math and Calculator Tools
+    ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png","color"],
+    ["WolframAlpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png","color"],
+    ["Desmos", "https://www.desmos.com/calculator", "/images/desmos.png","color"],
 
     // Coding/Computer Science
-    ["Code HS", "https://codehs.com/sections/3059537", "/images/codeHS.png"],
-    ["Code.org", "https://studio.code.org/home", "/images/code.png"],
-    ["p5.js", "https://editor.p5js.org/", "/images/p5.png"],
-    ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png"],
-    ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png"],
-    ["GitHub", "https://github.com/", "/images/github.png"],
-
-    // Music
-    ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png"],
-
-    // Math and Calculator Tools
-    ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png"],
-    ["Wolfram Alpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png"],
-    ["Desmos", "https://www.desmos.com/calculator", "/images/desmos.png"],
+    ["Code HS", "https://codehs.com/sections/3059537", "/images/codeHS.png","color"],
+    ["Code.org", "https://studio.code.org/home", "/images/code.png","black"],
+    ["p5.js", "https://editor.p5js.org/", "/images/p5.png","color"],
+    ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png","color"],
+    ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png","color"],
+    ["GitHub", "https://github.com/", "/images/github.png","black"],
 
     // Language and Writing
-    ["Grammarly", "https://www.grammarly.com/", "/images/grammarly.png"],
-    ["Duolingo", "https://www.duolingo.com/", "/images/duolingo.png"],
-    ["Wordle","https://www.nytimes.com/games/wordle/index.html", "/images/wordle.png"],
-    ["Seterra", "https://www.seterra.com/", "/images/seterra.png"],
+    ["Grammarly", "https://www.grammarly.com/", "/images/grammarly.png","color"],
+    ["Duolingo", "https://www.duolingo.com/", "/images/duolingo.png","color"],
+    ["Wordle","https://www.nytimes.com/games/wordle/index.html", "/images/wordle.png","color"],
+    ["Seterra", "https://www.seterra.com/", "/images/seterra.png","color"],
   
     // Study Guides and Online Learning Platforms
-    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png"],
-    ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png"],
-    ["AP Study Guides", "https://knowt.io/", "/images/knowt.png"],
-    ["SparkNotes", "https://www.sparknotes.com/", "/images/sparknotes.png"],
-    ["Shmoop", "https://www.shmoop.com/", "/images/shmoop.png"],
-    ["Brainly", "https://brainly.com/", "/images/brainly.png"],
-    ["Course Hero", "https://www.coursehero.com/", "/images/courseHero.png"],
+    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png","color"],
+    ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png","color"],
+    ["AP Study Guides", "https://knowt.io/", "/images/knowt.png","color"],
+    ["SparkNotes", "https://www.sparknotes.com/", "/images/sparknotes.png","color"],
+    ["Shmoop", "https://www.shmoop.com/", "/images/shmoop.png","color"],
+    ["Brainly", "https://brainly.com/", "/images/brainly.png","black"],
+    ["Course Hero", "https://www.coursehero.com/", "/images/courseHero.png","color"],
 
     //YouTube Channels
-    ["CrashCourse", "https://www.youtube.com/@crashcourse", "/images/crashCourse.png"],
-    ["Heilmer's History", "https://www.youtube.com/@heimlershistory", "/images/heilmer.png"],
-    ["Organic Chemistry Tutor", "https://www.youtube.com/@theorganicchemistrytutor", "/images/organicChemistryTutor.png"],
-    ["Bozeman Science", "https://www.youtube.com/@Bozemanscience1", "/images/bozeman.png"],
-    ["Flipping Physics", "https://www.youtube.com/@flippingphysics", "/images/flippingPhysics.png"],
-    ["Coding Train", "https://www.youtube.com/@thecodingtrain", "/images/codingTrain.png"],
-    ["Brain McLogan", "https://www.youtube.com/@brianmclogan", "/images/brianMclogan.png"]
-
+    ["CrashCourse", "https://www.youtube.com/@crashcourse", "/images/crashCourse.png","color"],
+    ["Organic Chemistry Tutor", "https://www.youtube.com/@theorganicchemistrytutor", "/images/organicChemistryTutor.png","color"],
+    ["Coding Train", "https://www.youtube.com/@thecodingtrain", "/images/codingTrain.png","color"],
+    ["Bozeman Science", "https://www.youtube.com/@Bozemanscience1", "/images/bozeman.png","color"],
+    ["Brain McLogan", "https://www.youtube.com/@brianmclogan", "/images/brianMclogan.png","color"],
+    ["Heilmer's History", "https://www.youtube.com/@heimlershistory", "/images/heilmer.png","color"],
+    ["Flipping Physics", "https://www.youtube.com/@flippingphysics", "/images/flippingPhysics.png","black"],
     ];
+
 
 // Get the checkbox element
 const checkbox = document.getElementById("addToTopCheckbox");
@@ -281,7 +276,7 @@ chrome.storage.sync.get("sliderValue", function(data) {
   
 
   function populateTable(tbody, links, addedTable) {
-    links.forEach(([linkName, url, image]) => {
+    links.forEach(([linkName, url, image,lightDarkMode]) => {
       const tr = document.createElement("tr");
       const td = document.createElement("td");
       const div = document.createElement("div");
@@ -292,7 +287,7 @@ chrome.storage.sync.get("sliderValue", function(data) {
   
       div.textContent = linkName;
       img.src = image;
-      img.alt = linkName;
+      img.alt = lightDarkMode;
       img.width = 50;
       img.height = 50;
       img.style.marginRight = "10px";
@@ -371,14 +366,15 @@ function moveBack(event) {
     const imgElement = tr.querySelector("img");
     const url = imgElement.getAttribute('data-url');
     const image = imgElement.getAttribute('src');
-  
+    const lightDarkMode = imgElement.getAttribute('alt');
+
     const index = fromLinks.findIndex(([name]) => name === linkName);
     if (index === -1) {
       console.error(`Link data not found in the list`);
       return;
     }
   
-    const movedLink = [linkName, url, image]; // Get the correct link data
+    const movedLink = [linkName, url, image,lightDarkMode]; // Get the correct link data
     fromLinks.splice(index, 1);
   
     const addToTopCheckbox = document.getElementById("addToTopCheckbox");
@@ -425,6 +421,7 @@ function moveBack(event) {
     slider.value = 3;
     output.innerHTML = 3;
     chrome.storage.sync.set({ sliderValue: 3 });
+    chrome.storage.sync.set({ mode: "light" });
     chrome.storage.local.clear();
     location.reload();
   });
