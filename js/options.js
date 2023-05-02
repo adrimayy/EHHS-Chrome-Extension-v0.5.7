@@ -22,15 +22,6 @@
   ];
 
 let removedLinks = [
-    // Libraries and Databases
-    ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png","black"],
-    ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png","color"],
-    ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png","black"],
-    ["LTV EH", "https://www.youtube.com/@LTVEastHampton", "/images/ltv.png","color"],
-    ["NoodleTools", "https://my.noodletools.com/web2.0/projects.html", "/images/noodleTools.png","color"],
-    ["EH Databases", "https://sites.google.com/ehschools.org/ehhslibrary/databases?pli=1", "/images/database.png","black"],
-    ["JSTOR", "https://www.jstor.org/", "/images/jstor.png","color"],
-
     // Google Suite Tools
     ["Translate", "https://translate.google.com/", "/images/googleTranslate.png","color"],
     ["Docs", "https://docs.google.com/document/u/0/", "/images/docs.png","color"],
@@ -39,11 +30,7 @@ let removedLinks = [
     ["Keep", "https://keep.google.com/u/0/", "/images/keep.png","color"],
     ["YouTube", "https://www.youtube.com/", "/images/youtube.png","color"],
     ["Calendar", "https://calendar.google.com/calendar/u/0/r", "/images/calendar.png","color"],
-    
-    // News
-    ["NY Times", "https://www.nytimes.com/", "/images/nyTimes.png","black"],
-    ["Weather", "https://weather.com/en-BZ/weather/tenday/l/11937:4:US", "/images/weather.png","black"],
-    
+
     // Educational Games/Tools
     ["EdX", "https://home.edx.org/", "/images/edX.png","black"],
     ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png","color"],
@@ -54,18 +41,24 @@ let removedLinks = [
     ["Quizizz", "https://quizizz.com/join", "/images/quizizz.png","color"],
     ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png","color"],
     ["Udemy", "https://www.udemy.com/", "/images/udemy.png","black"],
+  
     ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png","color"],
   
+    // Libraries and Databases
+    ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png","black"],
+    ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png","color"],
+    ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png","black"],
+    ["LTV EH", "https://www.youtube.com/@LTVEastHampton", "/images/ltv.png","color"],
+    ["NoodleTools", "https://my.noodletools.com/web2.0/projects.html", "/images/noodleTools.png","color"],
+    ["EH Databases", "https://sites.google.com/ehschools.org/ehhslibrary/databases?pli=1", "/images/database.png","black"],
+    ["JSTOR", "https://www.jstor.org/", "/images/jstor.png","color"],
+
     //Phootgraphy and Art
     ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
-    
-    // Music
-    ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","color"],
-    
-    // Math and Calculator Tools
-    ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png","color"],
-    ["WolframAlpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png","color"],
-    ["Desmos", "https://www.desmos.com/calculator", "/images/desmos.png","color"],
+
+    // News
+    ["NY Times", "https://www.nytimes.com/", "/images/nyTimes.png","black"],
+    ["Weather", "https://weather.com/en-BZ/weather/tenday/l/11937:4:US", "/images/weather.png","black"],
 
     // Coding/Computer Science
     ["Code HS", "https://codehs.com/sections/3059537", "/images/codeHS.png","color"],
@@ -74,6 +67,14 @@ let removedLinks = [
     ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png","color"],
     ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png","color"],
     ["GitHub", "https://github.com/", "/images/github.png","black"],
+
+    // Music
+    ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","color"],
+
+    // Math and Calculator Tools
+    ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png","color"],
+    ["WolframAlpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png","color"],
+    ["Desmos", "https://www.desmos.com/calculator", "/images/desmos.png","color"],
 
     // Language and Writing
     ["Grammarly", "https://www.grammarly.com/", "/images/grammarly.png","color"],
@@ -92,14 +93,14 @@ let removedLinks = [
 
     //YouTube Channels
     ["CrashCourse", "https://www.youtube.com/@crashcourse", "/images/crashCourse.png","color"],
-    ["Organic Chemistry Tutor", "https://www.youtube.com/@theorganicchemistrytutor", "/images/organicChemistryTutor.png","color"],
-    ["Coding Train", "https://www.youtube.com/@thecodingtrain", "/images/codingTrain.png","color"],
-    ["Bozeman Science", "https://www.youtube.com/@Bozemanscience1", "/images/bozeman.png","color"],
-    ["Brain McLogan", "https://www.youtube.com/@brianmclogan", "/images/brianMclogan.png","color"],
     ["Heilmer's History", "https://www.youtube.com/@heimlershistory", "/images/heilmer.png","color"],
+    ["Organic Chemistry Tutor", "https://www.youtube.com/@theorganicchemistrytutor", "/images/organicChemistryTutor.png","color"],
+    ["Bozeman Science", "https://www.youtube.com/@Bozemanscience1", "/images/bozeman.png","color"],
     ["Flipping Physics", "https://www.youtube.com/@flippingphysics", "/images/flippingPhysics.png","black"],
-    ];
+    ["Coding Train", "https://www.youtube.com/@thecodingtrain", "/images/codingTrain.png","color"],
+    ["Brain McLogan", "https://www.youtube.com/@brianmclogan", "/images/brianMclogan.png","color"],
 
+    ];
 
 // Get the checkbox element
 const checkbox = document.getElementById("addToTopCheckbox");
@@ -337,25 +338,26 @@ chrome.storage.sync.get("sliderValue", function(data) {
 // Replace this block in your code with the following updated block
 //       img.setAttribute('data-url', url); // Add this line
 function moveToRemoved(event) {
-  const tr = event.target.parentElement;
-  const button = tr.querySelector("button");
+  const target = event.target.tagName === 'BUTTON' ? event.target : event.target.parentElement;
+  const tr = target.parentElement;
   
-  button.textContent = "+";
-  button.style.backgroundColor = "green";
-  button.removeEventListener("click", moveToRemovedWrapper);
-  button.addEventListener("click", moveBackWrapper);
+  target.textContent = "+";
+  target.style.backgroundColor = "green";
+  target.removeEventListener("click", moveToRemovedWrapper);
+  target.addEventListener("click", moveBackWrapper);
+  
   
   moveRow(tbody, removedLinksTbody, tr, addedLinks, removedLinks);
 }
 
 function moveBack(event) {
-  const tr = event.target.parentElement;
-  const button = tr.querySelector("button");
+  const target = event.target.tagName === 'BUTTON' ? event.target : event.target.parentElement;
+  const tr = target.parentElement;
   
-  button.textContent = "−";
-  button.style.backgroundColor = "red";
-  button.removeEventListener("click", moveBackWrapper);
-  button.addEventListener("click", moveToRemovedWrapper);
+  target.textContent = "−";
+  target.style.backgroundColor = "red";
+  target.removeEventListener("click", moveBackWrapper);
+  target.addEventListener("click", moveToRemovedWrapper);
   
   moveRow(removedLinksTbody, tbody, tr, removedLinks, addedLinks);
 }
