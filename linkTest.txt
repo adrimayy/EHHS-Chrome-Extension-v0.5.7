@@ -1,0 +1,9 @@
+  let addedLinks = [
+    ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
+    ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png","color"],
+  ];
+
+let removedLinks = [
+    ["Translate", "https://translate.google.com/", "/images/googleTranslate.png","color"],
+    ["Docs", "https://docs.google.com/document/u/0/", "/images/docs.png","color"],
+    ];
