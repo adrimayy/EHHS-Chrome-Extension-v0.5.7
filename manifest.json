@@ -11,16 +11,16 @@
   "action": {
     "default_popup": "html/mainPage.html",
     "default_icon": {
-      "16": "images/simpleBonac16.png",
-      "32": "images/simpleBonac32.png",
-      "64": "images/simpleBonac64.png",
-      "128": "images/simpleBonac128.png"
+      "16": "images/darkSimpleBonac16.png",
+      "32": "images/darkSimpleBonac32.png",
+      "64": "images/darkSimpleBonac64.png",
+      "128": "images/darkSimpleBonac128.png"
     }
   },
   "icons": {
-    "16": "images/simpleBonac16.png",
-    "32": "images/simpleBonac32.png",
-    "64": "images/simpleBonac64.png",
-    "128": "images/simpleBonac128.png"
+    "16": "images/darkSimpleBonac16.png",
+    "32": "images/darkSimpleBonac32.png",
+    "64": "images/darkSimpleBonac64.png",
+    "128": "images/darkSimpleBonac128.png"
   }
 }
