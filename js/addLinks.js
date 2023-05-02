@@ -5,18 +5,21 @@ function getAddedLinks() {
         resolve(JSON.parse(result.addedLinks));
       } else {
         const defaultLinks = [
-          ["Schedule", "/html/clockPage.html", "/images/clock.png"],
-          ["Gmail", "https://mail.google.com/mail/u/0/#inbox", "/images/gmail.png"],
-          ["Classroom", "https://classroom.google.com/", "/images/classroom.png"],
-          ["Drive", "https://drive.google.com/drive/u/0/", "/images/drive.png"],
-          ["EHHS", "https://www.easthamptonschools.org/highschool", "/images/bonac.png"],
-          ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png"],
-          ["EH Tech Support", "https://ehschools.mojohelpdesk.com/", "/images/support.png"],
-          ["Virtual Bulletin", "https://docs.google.com/presentation/d/1T-idGOxDysnA_qrA0ilTapPdZNXiYt-09Ew1kL1AUbk/preview?slide=id.gb047d9a6b6_0_28", "/images/announcement.png"],
-          ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png"],
-          ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png"],
-          ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png"],
-          ["AP Classroom", "https://apstudents.collegeboard.org/", "/images/collegeBoard.png"],
+          ["Drive", "https://drive.google.com/drive/u/0/", "/images/drive.png","color"],
+          ["Gmail", "https://mail.google.com/mail/u/0/#inbox", "/images/gmail.png","color"],
+          ["Classroom", "https://classroom.google.com/", "/images/classroom.png","color"],
+
+          ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
+          ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png","color"],
+          ["Naviance", "https://student.naviance.com/main", "/images/naviance.png","black"],    
+
+          ["EHHS", "https://www.easthamptonschools.org/highschool", "/images/bonac.png","color"],
+          ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png","black"],
+          ["Virtual Bulletin", "https://docs.google.com/presentation/d/1T-idGOxDysnA_qrA0ilTapPdZNXiYt-09Ew1kL1AUbk/preview?slide=id.gb047d9a6b6_0_28", "/images/announcement.png","black"],
+          
+          ["EH Tech Support", "https://ehschools.mojohelpdesk.com/", "/images/support.png","black"],
+          ["AP Classroom", "https://apstudents.collegeboard.org/", "/images/collegeBoard.png","black"],
+          ["Delta Math", "https://www.deltamath.com/app/student", "/images/deltaMath.png","black"],
         ];
         resolve(defaultLinks);
       }
@@ -75,7 +78,10 @@ async function addLinks() {
 
   const rowHolder = await setRowHolder();
 
-  addedLinks.forEach((link) => {
+  chrome.storage.sync.get('isDarkMode', function(data) {
+    const isDarkMode = data.isDarkMode;
+
+    addedLinks.forEach((link) => {
     const linkContainer = document.createElement('a');
     linkContainer.classList.add('nameText');
     linkContainer.href = link[1]; // Set href to the correct website URL
@@ -89,7 +95,15 @@ async function addLinks() {
     const iconImage = document.createElement('img');
     iconImage.classList.add('iconImage');
     iconImage.setAttribute('src', link[2]);
+    iconImage.setAttribute('alt', link[3]);
 
+    if (isDarkMode && link[3] === 'black') {
+      iconImage.classList.add('dark-mode');
+    } else if (!isDarkMode && link[3] === 'black') {
+      iconImage.classList.remove('dark-mode');
+    }
+    
+    
     const nameContainer = document.createElement('div');
     nameContainer.classList.add('nameContainer');
 
@@ -108,18 +122,26 @@ async function addLinks() {
       linkRow.parentNode.appendChild(row);
       row = document.createElement('div');
       row.classList.add('linkRow');
+      // Dispatch the custom event after appending a row of images
+      const imageAddedEvent = new CustomEvent('imageAdded');
+      document.dispatchEvent(imageAddedEvent);
     }
   });
 
   if (linkCount % rowHolder !== 0) {
     linkRow.parentNode.appendChild(row);
+    // Dispatch the custom event after appending the last row of images
+    const imageAddedEvent = new CustomEvent('imageAdded');
+    document.dispatchEvent(imageAddedEvent);
   }
 
   const feedbackContainer = document.querySelector('.feedbackContainer');
   linkRow.parentNode.insertBefore(feedbackContainer, null);
-  await setTitleText(rowHolder);
+});
 
+  await setTitleText(rowHolder);
 }
 
 // Call the function to add the links when the page loads
 window.addEventListener('load', addLinks);
+
