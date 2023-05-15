@@ -1,3 +1,6 @@
+html{
+	background-color: #fbf9fa;
+}
 * {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -6,6 +9,13 @@ tr * {
 }
 td * {
   user-select: none;
+}
+.dark-mode{
+	filter: brightness(0) invert(1);
+}
+th{
+  height: 50px !important;
+  background-color:#f2f2f2;
 }
 button{
   display: flex;
@@ -71,7 +81,7 @@ h1{
 .draggable-table {
   width: 45%;
   border-collapse: collapse;
-  background: white;
+  background: #fbf9fa;
   -webkit-box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
 }
@@ -127,29 +137,24 @@ td{
   text-indent: 20px;
   padding: 10px;
   user-select: none;
-  border-top: 1px solid whitesmoke;
 }
-
+.tableTitle{
+	color:#2b2024;
+  font-size:30px;
+}
 .draggable-table tbody tr:nth-child(even) {
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
 }
 
 .draggable-table tbody tr:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #fbf9fa;
 }
 
-.draggable-table tbody tr.is-dragging {
-  background: #f1c40f;
-}
-
-.draggable-table tbody tr.is-dragging td {
-  color: #ffe683;
-}
 .topNavContainer{
     display:flex;
     width:100%;
     height:45px;
-    background-color:white;
+    background-color: #fbf9fa;
     border-top: 5px solid gray;
     border-bottom: 5px solid gray;
     align-items:center;
@@ -166,7 +171,7 @@ td{
   align-items: center;
 }
 #sliderValue{
-  color: #7A0C0D;
+  color: #2b2024;
   font-weight: bold;
   margin-left: 10px;
   user-select: none;
@@ -224,7 +229,7 @@ td{
 
 }
 #resetButton:hover{
-  background-color: white;
+  background-color: #fbf9fa;
   color: #7A0C0D;
 }
 /* The container */
@@ -237,6 +242,7 @@ td{
   cursor: pointer;
   font-size: 22px;
   font-weight: bold;
+  color:#2b2024;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -295,4 +301,13 @@ td{
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.linkName{
+  color:#2b2024;
+}
+:root{
+	--background-color: #fbf9fa;
+	--border-color: #2b2024;
+	--text-color: #2b2024;
+	--title-color:#7A0C0D;
 }
