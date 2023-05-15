@@ -9,8 +9,6 @@
         <link rel="icon" type="image/x-icon" href="logo.svg">
         <meta charset="utf-8">
         <title>Bonac Tech Links</title>
-        <script src="/js/p5.js"></script>
-
     </head>
     
     <body>
@@ -18,18 +16,20 @@
             <div class = "scheduleContainer">
                 <a  href = "/html/mainPage.html">
                     <div class = "leftArrowContainer">
-                        <img src = "/images/leftArrow.png" id = "leftArrowImage"/>
+                        <img alt = "black" src = "/images/leftArrow.png" id = "leftArrowImage"/>
                     </div>
                 </a>
                 <p class = "scheduleTitleText">SCHEDULE</p>
                 <a href = "https://ehhs.urbanatwork.com/2021/" target = "_blank">
                     <div class = "openLinkContainer">
-                        <img class = "openLinkImage" src = "/images/open.png"/>
+                        <img alt = "black" class = "openLinkImage" src = "/images/open.png"/>
                     </div>
                 </a>
             </div>            
         </div>
 
-    	<script src = "/js/sketch.js"></script>
+        <canvas id="period-schedule"></canvas>
+        <script src="/js/applyStyles.js"></script>
+        <script src="/js/period-schedule.js"></script>    
     </body>
 </html>
