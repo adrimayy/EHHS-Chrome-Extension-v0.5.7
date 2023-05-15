@@ -21,16 +21,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (isDarkMode) {
       cssProperties = {
-        '--background-color': '#2b2024',
+        '--background-color': '#2c2124',
+        '--background-dark-color': '#1d1618',
         '--border-color': '#fbf9fa',
+        '--border-eh-color': '#fbf9fa',
         '--text-color': '#fbf9fa',
         '--title-color': '#a80038'
       };
     } else {
       cssProperties = {
         '--background-color': '#fbf9fa',
-        '--border-color': '#2b2024',
-        '--text-color': '#2b2024',
+        '--background-dark-color': '#f2f2f2',
+        '--border-color': '#2c2124',// #2b2024
+        '--border-eh-color': 'gray',
+        '--text-color': '#2c2124',// #141010
         '--title-color': '#7A0C0D'
       };
     }
@@ -116,16 +120,19 @@ document.addEventListener('DOMContentLoaded', function() {
       imagesObserver.observe(document.body, observerConfig);
       return imagesObserver;
     }
-  
+    
     lightDarkModeBtn.addEventListener('click', function() {
-      const currentMode = document.documentElement.style.getPropertyValue('--background-color') === '#2b2024' ? 'dark' : 'light';
+      const currentMode = document.documentElement.style.getPropertyValue('--background-color') === '#2c2124' ? 'dark' : 'light';
       const newMode = currentMode === 'light' ? 'dark' : 'light';
       applyDarkMode(newMode === 'dark');
       chrome.storage.sync.set({ mode: newMode }, function() {
         console.log('Mode saved to Chrome storage:', newMode);
       });
+      // Dispatch the custom event
+      document.dispatchEvent(new CustomEvent('lightDarkModeChanged', { detail: newMode }));
     });
-  
+    
+    
     chrome.storage.sync.get('mode', function(data) {
       if (data.mode === 'dark') {
         applyDarkMode(true);
