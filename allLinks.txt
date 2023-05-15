@@ -6,7 +6,6 @@
     ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
     ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png","color"],
     ["Naviance", "https://student.naviance.com/main", "/images/naviance.png","black"],    
-
     ["EHHS", "https://www.easthamptonschools.org/highschool", "/images/bonac.png","color"],
     ["Guidance","https://www.easthamptonschools.org/guidance", "/images/guidance.png","black"],
     ["Virtual Bulletin", "https://docs.google.com/presentation/d/1T-idGOxDysnA_qrA0ilTapPdZNXiYt-09Ew1kL1AUbk/preview?slide=id.gb047d9a6b6_0_28", "/images/announcement.png","black"],
@@ -41,9 +40,19 @@ let removedLinks = [
     ["Weather", "https://weather.com/en-BZ/weather/tenday/l/11937:4:US", "/images/weather.png","black"],
     
     // Science
+    ["Kami", "https://web.kamihq.com/web/viewer.html", "/images/kami.png","color"],
     ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png","color"],
     ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png","color"],
+    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png","color"],
+    ["Duolingo", "https://www.duolingo.com/", "/images/duolingo.png","color"],
+    ["Rosetta Stone", "https://www.rosettastone.com/", "/images/rosettaStone.png","color"],
+    ["Oddessyware", "https://ehufsd.owschools.com/owsoo/login/auth", "/images/oddessyware.png","color"],
+    ["Word Reference", "https://www.wordreference.com/", "/images/wordReference.png","color"],
+    ["Verbix", "https://www.verbix.com/", "/images/verbix.png","color"],
+    ["Remind", "https://www.remind.com/", "/images/remind.png","color"],
+    ["AP Exam Dates","https://apcentral.collegeboard.org/exam-administration-ordering-scores/exam-dates", "/images/schedule.png","black"],
     ["AP Study Guides", "https://knowt.io/", "/images/knowt.png","color"],
+    ["AP Score Calculator", "https://www.albert.io/blog/ap-score-calculators/","/images/albert.png","color"],
 
     // Educational Games/Tools
     ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png","color"],
@@ -53,7 +62,7 @@ let removedLinks = [
 
     // Music
     ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","color"],
-    
+    ["Spotify", "https://open.spotify.com/", "/images/spotify.png","color"],
     //Phootgraphy and Art
     ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
     
@@ -69,10 +78,8 @@ let removedLinks = [
     ["p5.js", "https://editor.p5js.org/", "/images/p5.png","color"],
     ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png","color"],
     ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png","color"],
-    ["Khan Academy", "https://www.khanacademy.org/", "/images/khanAcademy.png","color"],
-
+    ["Astromech", "http://astromech.net/", "/images/astromech.png","color"],
     // Live Classes and educational games
-    ["Duolingo", "https://www.duolingo.com/", "/images/duolingo.png","color"],
     ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png","color"],
     ["Kahoot", "https://kahoot.it/", "/images/kahoot.png","color"],
     ["Blooket", "https://play.blooket.com/play", "/images/blooket.png","color"],
@@ -90,7 +97,7 @@ let removedLinks = [
 
     //YouTube Channels
     ["CrashCourse", "https://www.youtube.com/@crashcourse", "/images/crashCourse.png","color"],
-    ["Heilmer's History", "https://www.youtube.com/@heimlershistory", "/images/heilmer.png","color"],
+    ["Heimler's History", "https://www.youtube.com/@heimlershistory", "/images/heilmer.png","color"],
     ["Organic Chemistry Tutor", "https://www.youtube.com/@theorganicchemistrytutor", "/images/organicChemistryTutor.png","color"],
     ["Bozeman Science", "https://www.youtube.com/@Bozemanscience1", "/images/bozeman.png","color"],
     ["Flipping Physics", "https://www.youtube.com/@flippingphysics", "/images/flippingPhysics.png","black"],
