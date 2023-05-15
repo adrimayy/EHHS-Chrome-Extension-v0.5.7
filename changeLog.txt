@@ -1,3 +1,3 @@
 May 1st - v0.5.01: Added Dark Theme to the popup.html, updated the sketch.js to a simpler version with the exact same functionality
-May 2nd - v0.5.02: Redid the sketch.js (-> period-schedule.js) by removing the need for p5 and using raw JavaScript; sped up the loading time of the clockpage canavas from 2-3 seconds to instantainous, added a few more links, (Rosetta Stone, Spotify, Oddessyware, Word Refrence, Verbix, Remind, Kami), added dark theme functionality to the options.html
-May 3rd - v0.5.03: 
+May 2nd - v0.5.02: Redid the sketch.js (-> periodSchedule.js) by removing the need for p5 and using raw JavaScript; sped up the loading time of the clockpage canavas from 2-3 seconds to instantainous, added a few more links, (Rosetta Stone, Spotify, Oddessyware, Word Refrence, Verbix, Remind, Kami)
+May 15th - v0.5.03: A few finishing touches; Added the images and edited the files on the github repo
