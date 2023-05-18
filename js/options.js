@@ -106,7 +106,7 @@ let removedLinks = [
     ["Bozeman Science", "https://www.youtube.com/@Bozemanscience1", "/images/bozeman.png","color"],
     ["Flipping Physics", "https://www.youtube.com/@flippingphysics", "/images/flippingPhysics.png","black"],
     ["Coding Train", "https://www.youtube.com/@thecodingtrain", "/images/codingTrain.png","color"],
-    ["Brain McLogan", "https://www.youtube.com/@brianmclogan", "/images/brianMclogan.png","color"],
+    ["Brian McLogan", "https://www.youtube.com/@brianmclogan", "/images/brianMclogan.png","color"],
 
     ];
 
