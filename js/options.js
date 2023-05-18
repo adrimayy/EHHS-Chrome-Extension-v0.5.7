@@ -2,7 +2,7 @@
 (async function() {
   "use strict";
 
-  let addedLinks = [
+   let addedLinks = [
     ["Drive", "https://drive.google.com/drive/u/0/", "/images/drive.png","color"],
     ["Gmail", "https://mail.google.com/mail/u/0/#inbox", "/images/gmail.png","color"],
     ["Classroom", "https://classroom.google.com/", "/images/classroom.png","color"],
@@ -56,6 +56,7 @@ let removedLinks = [
     ["Remind", "https://www.remind.com/", "/images/remind.png","color"],
     ["AP Exam Dates","https://apcentral.collegeboard.org/exam-administration-ordering-scores/exam-dates", "/images/schedule.png","black"],
     ["AP Study Guides", "https://knowt.io/", "/images/knowt.png","color"],
+    ["AP Study Guides", "https://library.fiveable.me/", "/images/fiveable.png","color"],
     ["AP Score Calculator", "https://www.albert.io/blog/ap-score-calculators/","/images/albert.png","color"],
 
     // Educational Games/Tools
@@ -67,9 +68,11 @@ let removedLinks = [
     // Music
     ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","color"],
     ["Spotify", "https://open.spotify.com/", "/images/spotify.png","color"],
+    
     //Phootgraphy and Art
     ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
     ["Img BG Remover", "https://www.remove.bg/", "/images/removeBG.png","black"],
+    
     // Math and Calculator Tools
     ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png","color"],
     ["WolframAlpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png","color"],
