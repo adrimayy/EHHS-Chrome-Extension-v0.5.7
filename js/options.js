@@ -69,7 +69,7 @@ let removedLinks = [
     ["Spotify", "https://open.spotify.com/", "/images/spotify.png","color"],
     //Phootgraphy and Art
     ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
-    
+    ["Img BG Remover", "https://www.remove.bg/", "/images/removeBG.png","black"],
     // Math and Calculator Tools
     ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png","color"],
     ["WolframAlpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png","color"],
