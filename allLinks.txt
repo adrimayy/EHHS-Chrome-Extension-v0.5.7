@@ -52,6 +52,7 @@ let removedLinks = [
     ["Remind", "https://www.remind.com/", "/images/remind.png","color"],
     ["AP Exam Dates","https://apcentral.collegeboard.org/exam-administration-ordering-scores/exam-dates", "/images/schedule.png","black"],
     ["AP Study Guides", "https://knowt.io/", "/images/knowt.png","color"],
+    ["AP Study Guides", "https://library.fiveable.me/", "/images/fiveable.png","color"],
     ["AP Score Calculator", "https://www.albert.io/blog/ap-score-calculators/","/images/albert.png","color"],
 
     // Educational Games/Tools
