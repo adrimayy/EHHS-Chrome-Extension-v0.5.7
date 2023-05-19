@@ -1,4 +1,20 @@
-setInterval(updateBadge, 1000);
+const browserVersion = parseInt(navigator.userAgent.match(/Chrome\/(\d+)/)[1]);
+const minimumBrowserVersion = 88;
+
+if (browserVersion < minimumBrowserVersion) {
+  chrome.runtime.onInstalled.addListener(() => {
+    chrome.notifications.create({
+      type: 'basic',
+      iconUrl: '/images/lightSimpleBonac64.png',
+      title: 'Unsupported Browser Version',
+      message: `Your Chrome version (${browserVersion}) is not supported. Please update to version ${minimumBrowserVersion} or later.`,
+      priority: 2,
+    });
+  });
+}
+
+chrome.alarms.create('updateBadge', { periodInMinutes: 1 });
+chrome.alarms.onAlarm.addListener(updateBadge);
 
 function updateBadge() {
     const periodTimes = [
