@@ -13,8 +13,7 @@ if (browserVersion < minimumBrowserVersion) {
   });
 }
 
-chrome.alarms.create('updateBadge', { periodInMinutes: 1 });
-chrome.alarms.onAlarm.addListener(updateBadge);
+setInterval(updateBadge, 1000);
 
 function updateBadge() {
     const periodTimes = [
