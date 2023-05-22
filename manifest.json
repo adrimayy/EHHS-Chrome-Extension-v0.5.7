@@ -2,9 +2,9 @@
   "manifest_version": 3,
   "name": "EHHS Chrome Extension v0.5",
   "description": "Developed as a part of the EHHS Coding and Computer Science curriculum. Developers: Adriano Rangel & Urban Reininger",
-  "version": "0.5",
+  "version": "0.5.03",
   "options_page": "/html/options.html",
-  "permissions": ["activeTab", "storage", "notifications"],
+  "permissions": ["storage"],
   "background": {
     "service_worker": "js/background.js"
   },
