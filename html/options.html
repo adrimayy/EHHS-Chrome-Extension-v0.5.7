@@ -1,5 +1,4 @@
 <!-- This HTML file defines the structure of the options page of the web application. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,36 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Options</title>
     <link rel="stylesheet" href="/css/options.css">
-  </head>
+</head>
 <body>
     <div class="topNavContainer">
         <h1 id="topNavTitle">EAST HAMPTON HIGH SCHOOL</h1>
     </div>
     <div class="slidecontainer">
-      <p id = "linkPerRowText">Links per row:</p>
-      <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
-      <span id="sliderValue"></span>
-      <button id="resetButton">Reset</button>
+        <p id="linkPerRowText">Links per row:</p>
+        <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
+        <span id="sliderValue"></span>
+        <button id="resetButton">Reset</button>
     </div>
     <label class="container">Remove/Add to the top of the table
-      <input type="checkbox" id="addToTopCheckbox">
-      <span class="checkmark"></span>
+        <input type="checkbox" id="addToTopCheckbox">
+        <span class="checkmark"></span>
     </label>
-<div class="tables-container">
+    
+    <button id="expandButton">+ Custom Link</button>
+    <div id="add-link-form-container" class="hidden">
+        <form id="add-link-form">
+            <label for="link-name">Link Name:</label>
+            <input type="text" id="link-name" name="link-name" autocomplete="off" required maxlength="20">
 
-<table id="addedLinksTable" class="draggable-table">
-  <thead><tr><th><div class = "tableTitle">Added Links</div></th></tr></thead>
-  <tbody></tbody>
-</table>
+            <label for="link-url">Link URL:</label>
+            <input type="url" id="link-url" name="link-url" autocomplete="off" required>
 
-<table id="removedLinksTable" class="draggable-table">
-  <thead><tr><th><div class = "tableTitle">Removed Links</div></th></tr></thead>
-  <tbody></tbody>
-</table>
+            <label for="link-image">Image Path:</label>
+            <div style="display: flex; align-items: center;">
+                <input type="text" id="link-image" name="link-image" autocomplete="off" required>
+                <img id="info-icon" src="/images/info.png" style="display:flex; cursor:pointer; margin-left: 10px; width:30px; height:30px;"/>
+            </div>
 
-</div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <img src="/images/tutorial.gif" id="tutorialGif"/>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+
+            <label for="link-color">Color:</label>
+            <select id="link-color" name="link-color" required>
+                <option value="color">Color</option>
+                <option value="black">Black</option>
+            </select>
+
+            <button type="submit">Add Link</button>
+        </form>
+    </div>
+
+    <div class="tables-container">
+        <table id="addedLinksTable" class="draggable-table">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="tableTitle">Added Links</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <table id="removedLinksTable" class="draggable-table">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="tableTitle">Removed Links</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
     <script src="/js/options.js"></script>
-    <!-- <script src = "/js/applyStyles.js"></script> -->
 </body>
 </html>
-
