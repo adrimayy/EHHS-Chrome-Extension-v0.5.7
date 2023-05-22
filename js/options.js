@@ -1,8 +1,7 @@
-
 (async function() {
   "use strict";
 
-   let addedLinks = [
+  let addedLinks = [
     ["Drive", "https://drive.google.com/drive/u/0/", "/images/drive.png","color"],
     ["Gmail", "https://mail.google.com/mail/u/0/#inbox", "/images/gmail.png","color"],
     ["Classroom", "https://classroom.google.com/", "/images/classroom.png","color"],
@@ -137,7 +136,6 @@ checkbox.addEventListener("change", function() {
   updateDarkModeClass();
 });
 
-
 if (!isChecked) {
   checkbox.removeAttribute("checked");
 }
@@ -231,7 +229,7 @@ chrome.storage.sync.get("sliderValue", function(data) {
   
     if (to === tbody) {
       button.textContent = "−";
-      button.style.backgroundColor = "red";
+      button.classList.add("removeLink");
       button.removeEventListener("click", () => {
         moveBack(tr);
       });
@@ -240,7 +238,7 @@ chrome.storage.sync.get("sliderValue", function(data) {
       });
     } else {
       button.textContent = "+";
-      button.style.backgroundColor = "green";
+      button.classList.add("addLink");
       button.removeEventListener("click", () => {
         moveToRemoved(tr);
       });
@@ -272,7 +270,7 @@ chrome.storage.sync.get("sliderValue", function(data) {
     const tr = target.parentElement;
       
     target.textContent = "+";
-    target.style.backgroundColor = "green";
+    target.classList.add("addLink");
     target.removeEventListener("click", moveToRemovedWrapper);
     target.addEventListener("click", moveBackWrapper);
       
@@ -287,7 +285,7 @@ chrome.storage.sync.get("sliderValue", function(data) {
     const tr = target.parentElement;
     
     target.textContent = "−";
-    target.style.backgroundColor = "red";
+    target.classList.add("removeLink");
     target.removeEventListener("click", moveBackWrapper);
     target.addEventListener("click", moveToRemovedWrapper);
     
@@ -344,12 +342,12 @@ function populateTable(tbody, links, addedTable, isDarkMode) {
 
     if (addedTable) {
       button.textContent = "−";
-      button.style.backgroundColor = "red";
+      button.classList.add("removeLink");
       button.removeEventListener("click", moveBackWrapper);
       button.addEventListener("click", moveToRemovedWrapper);
     } else {
-      button.textContent = "+";
-      button.style.backgroundColor = "green";
+      button.classList.add("addLink");
+      button.textContent = "+";      
       button.removeEventListener("click", moveToRemovedWrapper);
       button.addEventListener("click", moveBackWrapper);
     }
@@ -420,11 +418,11 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
 
   if (toTable === tbody) {
     button.textContent = "−";
-    button.style.backgroundColor = "red";
+    button.classList.add("removeLink");
     button.addEventListener("click", moveToRemovedWrapper);
   } else {
-    button.textContent = "+";
-    button.style.backgroundColor = "green";
+    button.classList.add("addLink");
+    button.textContent = "+";    
     button.addEventListener("click", moveBackWrapper);
   }
 
@@ -446,8 +444,6 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
   updateDarkModeClass();
   loadTableData();
 }
-
-
   
   function loadTableData() {
     tbody.innerHTML = "";
@@ -463,17 +459,95 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
 
   const resetButton = document.getElementById("resetButton");
   resetButton.addEventListener("click", function() {
-    checkbox.checked = false;
-    isChecked = false;
-    checkbox.removeAttribute("checked");
-    chrome.storage.sync.set({ isChecked: false });
-  
-    slider.value = 3;
-    output.innerHTML = 3;
-    chrome.storage.sync.set({ sliderValue: 3 });
-    chrome.storage.sync.set({ mode: "light" });
-    chrome.storage.local.clear();
-    location.reload();
+    const confirmed = confirm("Are you sure you want to reset the added and removed links? This action cannot be undone and will erase any custom links that were added.");
+    if(confirmed) {
+      checkbox.checked = false;
+      isChecked = false;
+      checkbox.removeAttribute("checked");
+      chrome.storage.sync.set({ isChecked: false });
+    
+      slider.value = 3;
+      output.innerHTML = 3;
+      chrome.storage.sync.set({ sliderValue: 3 });
+      chrome.storage.sync.set({ mode: "light" });
+      chrome.storage.local.clear();
+      location.reload();
+    }
   });
   
+  const addLinkForm = document.getElementById('add-link-form');
+
+  addLinkForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const linkName = document.getElementById("link-name").value;
+    const linkUrl = document.getElementById("link-url").value;
+    const linkImage = document.getElementById("link-image").value;
+    const linkColor = document.getElementById("link-color").value;
+  
+    const newLink = [linkName, linkUrl, linkImage, linkColor];
+    addedLinks.unshift(newLink);
+    
+    chrome.storage.local.set({
+      addedLinks: JSON.stringify(addedLinks)
+    });
+  
+    loadTableData();
+  
+    // Clear the form inputs for the next use.
+    addLinkForm.reset();
+  });
+  
+
+  const expandButton = document.getElementById('expandButton');
+  const formContainer = document.getElementById('add-link-form-container');
+  
+  // Load state from storage
+  chrome.storage.sync.get('formVisible', (data) => {
+    if (data.formVisible) {
+      formContainer.classList.add('visible');
+      expandButton.innerText = "↑ Custom Link";
+    } else {
+      formContainer.classList.remove('visible');
+      expandButton.innerText = "+ Custom Link";
+    }
+  });
+  
+  expandButton.addEventListener('click', () => {
+    // Check if form is visible
+    if(formContainer.classList.contains('visible')) {
+      // Hide form
+      formContainer.classList.remove('visible');
+      expandButton.innerText = "+ Custom Link";  // Change button text to '+'
+      
+      // Save state to storage
+      chrome.storage.sync.set({formVisible: false});
+    } else {
+      // Show form
+      formContainer.classList.add('visible');
+      expandButton.innerText = "↑ Custom Link";  // Change button text to '↑'
+      
+      // Save state to storage
+      chrome.storage.sync.set({formVisible: true});
+    }
+  });
+  
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("info-icon");
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "flex";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
 })();
