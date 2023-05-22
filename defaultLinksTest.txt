@@ -1,4 +1,0 @@
-        const defaultLinks = [
-          ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
-          ["SchoolTool", "https://easthamptonst.esboces.org/schooltoolweb/", "/images/schoolTool.png","color"],
-        ];
