@@ -1,4 +1,15 @@
-updateBadge();
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.alarms.create("updateBadge", {
+    delayInMinutes: 0.1, // change to 0.01667 for approximately each second
+    periodInMinutes: 0.1 // change to 0.01667 for approximately each second
+  });
+});
+
+chrome.alarms.onAlarm.addListener((alarm) => {
+  if (alarm.name === "updateBadge") {
+    updateBadge();
+  }
+});
 
 function updateBadge() {
   try {    
