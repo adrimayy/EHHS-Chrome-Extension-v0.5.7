@@ -1,7 +1,7 @@
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onStartup.addListener(() => {
   chrome.alarms.create("updateBadge", {
-    delayInMinutes: 0.1, // change to 0.01667 for approximately each second
-    periodInMinutes: 0.1 // change to 0.01667 for approximately each second
+    delayInMinutes: 0.1,
+    periodInMinutes: 0.1
   });
 });
 
