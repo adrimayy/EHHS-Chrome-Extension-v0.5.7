@@ -1,22 +1,19 @@
 chrome.runtime.onStartup.addListener(() => {
-  chrome.alarms.create("updateBadge", {
-    delayInMinutes: 0.1,
-    periodInMinutes: 0.1
-  });
+  startUpdatingBadge();
+  console.log("onStartup");
 });
 
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.alarms.create("updateBadge", {
-    delayInMinutes: 0.1,
-    periodInMinutes: 0.1
-  });
+  startUpdatingBadge();
+  console.log("onInstalled");
 });
 
-chrome.alarms.onAlarm.addListener((alarm) => {
-  if (alarm.name === "updateBadge") {
-    updateBadge();
-  }
-});
+let updateBadgeInterval;
+
+function startUpdatingBadge() {
+  clearInterval(updateBadgeInterval);
+  updateBadgeInterval = setInterval(updateBadge, 1000);
+}
 
 function updateBadge() {
   try {    
