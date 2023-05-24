@@ -9,7 +9,6 @@ window.addEventListener('load', function() {
   // Retrieve the CSS properties object from the Chrome Extension storage
   chrome.storage.sync.get(['cssProperties'], (result) => {
     const cssProperties = result.cssProperties;
-    console.log('CSS properties retrieved from storage:', cssProperties);
 
     // Apply the styles to the HTML page
     applyStyles(cssProperties);
@@ -43,8 +42,6 @@ window.addEventListener('load', function() {
 
     chrome.storage.sync.get(['cssProperties'], (result) => {
       const cssProperties = result.cssProperties;
-      console.log('CSS properties retrieved from storage:', cssProperties);
-
       // Apply the styles to the HTML page
       applyStyles(cssProperties);
     });

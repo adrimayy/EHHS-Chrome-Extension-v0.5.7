@@ -23,7 +23,6 @@ function getAddedLinks() {
         ];
         resolve(defaultLinks);
       }
-      console.log(result.addedLinks);
     });
   });
 }
@@ -32,7 +31,6 @@ async function setRowHolder() {
   return new Promise((resolve) => {
     chrome.storage.sync.get('sliderValue', (data) => {
       const rowHolder = data.sliderValue ? parseInt(data.sliderValue) : 3;
-      console.log('rowHolder:', rowHolder); // Log the rowHolder value
       resolve(rowHolder);
     });
   });
@@ -40,7 +38,6 @@ async function setRowHolder() {
 
 
 async function setTitleText(rowHolder) {
-  console.log('rowHolder:', rowHolder); // Log the rowHolder value
   var root = document.documentElement;
   if (rowHolder === 1) {
     root.style.setProperty('--link-container-width', '106px');
