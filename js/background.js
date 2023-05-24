@@ -5,6 +5,13 @@ chrome.runtime.onStartup.addListener(() => {
   });
 });
 
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.alarms.create("updateBadge", {
+    delayInMinutes: 0.1,
+    periodInMinutes: 0.1
+  });
+});
+
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === "updateBadge") {
     updateBadge();
