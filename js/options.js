@@ -65,7 +65,7 @@ let removedLinks = [
     ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png","color"],
 
     // Music
-    ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","color"],
+    ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","black"],
     ["Spotify", "https://open.spotify.com/", "/images/spotify.png","color"],
     
     //Phootgraphy and Art
@@ -228,7 +228,6 @@ chrome.storage.sync.get("sliderValue", function(data) {
     const button = tr.querySelector("button");
   
     if (to === tbody) {
-      button.textContent = "−";
       button.classList.add("removeLink");
       button.removeEventListener("click", () => {
         moveBack(tr);
@@ -237,7 +236,6 @@ chrome.storage.sync.get("sliderValue", function(data) {
         moveToRemoved(tr);
       });
     } else {
-      button.textContent = "+";
       button.classList.add("addLink");
       button.removeEventListener("click", () => {
         moveToRemoved(tr);
@@ -269,7 +267,6 @@ chrome.storage.sync.get("sliderValue", function(data) {
     const target = event.target.tagName === 'BUTTON' ? event.target : event.target.parentElement;
     const tr = target.parentElement;
       
-    target.textContent = "+";
     target.classList.add("addLink");
     target.removeEventListener("click", moveToRemovedWrapper);
     target.addEventListener("click", moveBackWrapper);
@@ -284,7 +281,6 @@ chrome.storage.sync.get("sliderValue", function(data) {
     const target = event.target.tagName === 'BUTTON' ? event.target : event.target.parentElement;
     const tr = target.parentElement;
     
-    target.textContent = "−";
     target.classList.add("removeLink");
     target.removeEventListener("click", moveBackWrapper);
     target.addEventListener("click", moveToRemovedWrapper);
@@ -341,13 +337,11 @@ function populateTable(tbody, links, addedTable, isDarkMode) {
     button.style.lineHeight = "43px";
 
     if (addedTable) {
-      button.textContent = "−";
       button.classList.add("removeLink");
       button.removeEventListener("click", moveBackWrapper);
       button.addEventListener("click", moveToRemovedWrapper);
     } else {
       button.classList.add("addLink");
-      button.textContent = "+";      
       button.removeEventListener("click", moveToRemovedWrapper);
       button.addEventListener("click", moveBackWrapper);
     }
@@ -417,12 +411,10 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
   button.onclick = null;
 
   if (toTable === tbody) {
-    button.textContent = "−";
     button.classList.add("removeLink");
     button.addEventListener("click", moveToRemovedWrapper);
   } else {
     button.classList.add("addLink");
-    button.textContent = "+";    
     button.addEventListener("click", moveBackWrapper);
   }
 
