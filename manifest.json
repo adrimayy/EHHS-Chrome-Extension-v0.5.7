@@ -5,9 +5,6 @@
   "version": "0.5.4",
   "options_page": "/html/options.html",
   "permissions": ["storage"],
-  "background": {
-    "service_worker": "js/background.js"
-  },
   "action": {
     "default_popup": "html/mainPage.html",
     "default_icon": {
