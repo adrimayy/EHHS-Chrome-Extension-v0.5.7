@@ -409,22 +409,28 @@ td{
 }
 
 button.addLink {
-  background-color: green;
-  transition: background-color 0.2s ease;
+  background: url('/images/add.svg') no-repeat;
+  border: none;
+  background-size: contain; 
+  background-position: center; /* to center the image */
+  transition: transform 0.2s ease;
 }
 
 button.addLink:hover {
-  background-color: #006400; /* darker shade of green */
+  transform: scale(1.1);
 }
 button.removeLink {
-  background-color: red;
-  transition: background-color 0.2s ease;
+  background: url('/images/remove.svg') no-repeat;
+  border: none;
+  background-size: contain; 
+  background-position: center; /* to center the image */
+  transition: transform 0.2s ease;
 }
 
 button.removeLink:hover {
-  background-color: #800000; /* darker shade of red */
+  transform: scale(1.1);
 }
-/* The Modal (background) */
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
