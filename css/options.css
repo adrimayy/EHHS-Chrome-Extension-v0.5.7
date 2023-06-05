@@ -180,10 +180,11 @@ td{
 .slider {
   appearance: none;
   width: 125px;
-  height: 25px;
+  height: 15px;
   background: gray;
   outline: none;
   opacity: 0.7;
+  border-radius: 8px;
   -webkit-transition: .3s;
   transition: opacity .3s;
   margin-left: 10px;
@@ -196,15 +197,17 @@ td{
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   background: #7A0C0D;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   background: #7A0C0D;
   cursor: pointer;
 }
