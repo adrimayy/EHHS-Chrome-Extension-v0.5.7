@@ -70,7 +70,7 @@ async function setTitleText(rowHolder) {
     root.style.setProperty('--body-sides-margin', '8px');
     root.style.setProperty('--ehhs-logo-margin-left', '0px');
     document.getElementById("titleText").innerHTML = "HIGH SCHOOL";
-    document.getElementById("feedbackText").innerHTML = "Have feedback? Click here!";
+    document.getElementById("feedbackText").innerHTML = "Have any feedback?";
   }else if(rowHolder === 5){
     root.style.setProperty('--link-container-width', '450px');
     root.style.setProperty('--title-row-container-width', '410px');
@@ -96,7 +96,8 @@ async function addLinks() {
     addedLinks.forEach((link) => {
     const linkContainer = document.createElement('a');
     linkContainer.classList.add('nameText');
-    linkContainer.href = link[1]; // Set href to the correct website URL
+    linkContainer.href = link[1];
+    
     if (link[0] !== 'Schedule') {
       linkContainer.target = '_blank';
     }

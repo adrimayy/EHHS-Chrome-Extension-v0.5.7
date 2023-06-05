@@ -48,13 +48,7 @@ a{
     user-select: none; /* CSS3 */
 }
 
-#titleText{
-    font-size:26.5px;
-    text-align: center;
-    font-weight:540;
-    color:var(--title-color);
-    user-select: none;
-}
+
 .optionsContainer{
     display:flex;
     justify-content:center;
@@ -87,18 +81,7 @@ a{
     margin-right:50px;
 
 }
-.titleContainer {
-    display: flex;
-	width: var(--link-container-width);
-	height: 35px;
-	margin-top:5px;
-	margin-bottom:5px;
-	/*border: 2px solid green;*/
-	/*border: 1px solid blue;*/
-	justify-content:space-between;
-	align-items:center;
-	flex-direction:row;
-}
+
 
 .topButtonContainer {
     display: flex;
@@ -111,17 +94,7 @@ a{
 
 }
 
-.titleRow {
-    display: flex;
-   	width: var(--title-row-container-width);
-	height: 35px;
-	margin-right:5px;
-	/*border: 2px solid green;*/
-	justify-content:left;
-	text-align:center;
-	align-items:center;
-	/*background-color:#800c0c;*/
-}
+
 .nameContainer {
     display: flex;
     width: 55px;
@@ -169,12 +142,7 @@ a{
 .linkContainerBox:active {
 	border: 2px solid var(--title-color);
 }
-.eastHamptonImage{
-    width:35px;
-    height:35px;
-    margin-right:7px;
-	margin-left:var(--ehhs-logo-margin-left);
-}
+
 .iconImage {
     width:40px;
 	height: 40px;
@@ -186,7 +154,7 @@ a{
     display: flex;
 	width: var(--link-container-width);
 	height: 35px;
-	margin-top:5px;
+	/* margin-top:5px; */
 	/*border: 2px solid gray; */
 	text-align:center;
 	align-items:center;
@@ -196,11 +164,13 @@ a{
     margin-left:var(--feedback-margin-left);
     display: flex;
    	min-width: 35px;
-	min-height: 35px;
-	/*border: 2px solid gray; */
+	max-height: 35px;
 	border-radius:8px;
 	align-items:center;
 	justify-content:center;
+	border: 2px solid transparent; 
+	text-decoration: none!important;
+
 }
 .feedbackButton:hover {
 	border: 2px solid var(--border-color); 
@@ -212,13 +182,16 @@ a{
     font-size:20px;
     text-align: left;
     font-weight:540;
+	line-height: 0;
+	margin-left:var(--feedback-margin-left);
     color:var(--title-color);
     user-select: none;
-
 }
 #feedbackImage {
-    width: 25px;
-	height: 25px;
+    width: 22px;
+	height: 22px;
+	margin-left:5px;
+	margin-right:5px;
 	object-fit:contain;
 
 }
@@ -279,7 +252,7 @@ a{
     justify-content:center;
     align-items:center;
     min-height:35px;
-    min-width:35px;
+    max-width:35px;
 	background-color: transparent;
 	margin-right:auto;
 	border-radius:8px;
@@ -306,7 +279,50 @@ a{
 	--border-color: #2b2024;
 	--text-color: #2b2024;
 	--title-color:#a80038;
-	--feeback-margin-left: 5px;
+	--feedback-margin-left: 5px;
 	--body-sides-margin: 8px;
 	--ehhs-logo-margin-left:0px
 }
+
+.titleRow {
+	display: flex;
+	width: var(--link-container-width);
+	height: 35px;
+	justify-content: left;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 5px;
+  }
+  
+  .eastHamptonImage {
+	width: 35px;
+	height: 35px;
+	/* margin-right: 7px; */
+	margin-left: var(--ehhs-logo-margin-left);
+  }
+  
+  #titleText {
+	font-size: 26.5px;
+	text-align: center;
+	font-weight: 540;
+	color: var(--title-color);
+	user-select: none;
+	margin-left: 5px;
+  }
+  
+  #periodTime {
+	user-select: none;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-width: 50px;
+	min-height: 35px;
+	padding: 0px 5px 0px 5px;
+	background-color: var(--background-color);
+	color: #fbf9fa;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: var(--ehhs-logo-margin-left);
+  }

@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
       '--border-color': '#fbf9fa',
       '--border-eh-color': '#fbf9fa',
       '--text-color': '#fbf9fa',
-      '--title-color': '#a80038'
+      '--title-color': '#a80038',
+      '--blue-time-color': '#183a93',
+      '--grey-time-color': '#595959'
     };
   } else {
     cssProperties = {
@@ -35,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
       '--border-color': '#2c2124',// #2b2024
       '--border-eh-color': 'gray',
       '--text-color': '#2c2124',// #141010
-      '--title-color': '#7A0C0D'
+      '--title-color': '#7A0C0D',
+      '--blue-time-color': '#214fc6',
+      '--grey-time-color': '#595959'
     };
   }
 
