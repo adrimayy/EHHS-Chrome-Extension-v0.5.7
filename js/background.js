@@ -17,12 +17,10 @@ function updateBadge() {
 
   for (let i = 0; i < periodTimes.length; i++) {
     if (currentTime < periodTimes[i][1]) {
-      updateBadgeTextAndColor(periodTimes[i][1] - currentTime);
-      setTimeout(updateBadge, (periodTimes[i][1] - currentTime) * 1000);
+      updateBadgeTextAndColor(periodTimes[i][1] - currentTime, false);
       return;
     } else if (currentTime <= periodTimes[i][2]) {
-      updateBadgeTextAndColor(periodTimes[i][2] - currentTime);
-      setTimeout(updateBadge, (periodTimes[i][2] - currentTime) * 1000);
+      updateBadgeTextAndColor(periodTimes[i][2] - currentTime, true);
       return;
     }
   }
@@ -43,7 +41,7 @@ function updateBadgeTextAndColor(timeLeft, inPeriod) {
   } else {
     const hours = Math.floor(timeLeft / 3600);
     const minutes = Math.ceil((timeLeft % 3600) / 60);
-    timeText = hours.toString() + "h " + minutes.toString() + "m";
+    timeText = hours.toString() + "h" + minutes.toString() + "m";
     color = inPeriod ? "var(--grey-time-color)" : "var(--blue-time-color)";
   }
 
@@ -51,5 +49,4 @@ function updateBadgeTextAndColor(timeLeft, inPeriod) {
   periodElement.style.backgroundColor = color;
 }
 
-
-updateBadge();
+setInterval(updateBadge, 1000);
