@@ -6,11 +6,8 @@ window.addEventListener('load', function() {
     }
   }
 
-  // Retrieve the CSS properties object from the Chrome Extension storage
   chrome.storage.sync.get(['cssProperties'], (result) => {
     const cssProperties = result.cssProperties;
-
-    // Apply the styles to the HTML page
     applyStyles(cssProperties);
   });
 
@@ -36,13 +33,11 @@ window.addEventListener('load', function() {
     }
   });
 
-  // Listen for the lightDarkModeChanged event
   document.addEventListener('lightDarkModeChanged', function(event) {
     const isDarkMode = event.detail === 'dark';
 
     chrome.storage.sync.get(['cssProperties'], (result) => {
       const cssProperties = result.cssProperties;
-      // Apply the styles to the HTML page
       applyStyles(cssProperties);
     });
     applyAltImages(isDarkMode);
@@ -50,8 +45,8 @@ window.addEventListener('load', function() {
 
 
 });
-  // New functions in applyStyles.js
-  function getBackgroundColor() {
+
+function getBackgroundColor() {
     return document.documentElement.style.getPropertyValue('--background-color') || "#fbf9fa";
   }
 

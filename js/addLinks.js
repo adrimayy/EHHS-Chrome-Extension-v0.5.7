@@ -46,7 +46,7 @@ async function setTitleText(rowHolder) {
     root.style.setProperty('--body-sides-margin', '0px');
     root.style.setProperty('--ehhs-logo-margin-left', '8px');
     document.getElementById("titleText").innerHTML = "";
-    document.getElementById("feedbackText").innerHTML = "";
+    document.getElementById("feedbackText").innerHTML = "FB?";
   } else if (rowHolder === 2) {
     root.style.setProperty('--link-container-width', '180px');
     root.style.setProperty('--title-row-container-width', '140px');
@@ -54,7 +54,7 @@ async function setTitleText(rowHolder) {
     root.style.setProperty('--body-sides-margin', '8px');
     root.style.setProperty('--ehhs-logo-margin-left', '0px');
     document.getElementById("titleText").innerHTML = "HS";
-    document.getElementById("feedbackText").innerHTML = "FB?";
+    document.getElementById("feedbackText").innerHTML = "Feedback?";
   } else if (rowHolder === 3) {
     root.style.setProperty('--link-container-width', '270px');
     root.style.setProperty('--title-row-container-width', '230px');
@@ -62,7 +62,7 @@ async function setTitleText(rowHolder) {
     root.style.setProperty('--body-sides-margin', '8px');
     root.style.setProperty('--ehhs-logo-margin-left', '0px');
     document.getElementById("titleText").innerHTML = "HIGH SCHOOL";
-    document.getElementById("feedbackText").innerHTML = "Have feedback?";
+    document.getElementById("feedbackText").innerHTML = "Feedback?";
   } else if (rowHolder === 4) {
     root.style.setProperty('--link-container-width', '360px');
     root.style.setProperty('--title-row-container-width', '320px');
@@ -70,7 +70,7 @@ async function setTitleText(rowHolder) {
     root.style.setProperty('--body-sides-margin', '8px');
     root.style.setProperty('--ehhs-logo-margin-left', '0px');
     document.getElementById("titleText").innerHTML = "HIGH SCHOOL";
-    document.getElementById("feedbackText").innerHTML = "Have any feedback?";
+    document.getElementById("feedbackText").innerHTML = "Feedback?";
   }else if(rowHolder === 5){
     root.style.setProperty('--link-container-width', '450px');
     root.style.setProperty('--title-row-container-width', '410px');
@@ -78,7 +78,7 @@ async function setTitleText(rowHolder) {
     root.style.setProperty('--body-sides-margin', '8px');
     root.style.setProperty('--ehhs-logo-margin-left', '0px');
     document.getElementById("titleText").innerHTML = "HIGH SCHOOL";
-    document.getElementById("feedbackText").innerHTML = "Have feedback? Click here!";
+    document.getElementById("feedbackText").innerHTML = "Feedback?";
   }
 }
 async function addLinks() {

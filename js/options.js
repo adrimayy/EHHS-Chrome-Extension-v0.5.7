@@ -20,7 +20,6 @@
   ];
 
 let removedLinks = [
-    // Libraries and Databases
     ["EH Library", "http://easthamptonlibrary.org/teens/", "/images/book.png","black"],
     ["BBS: The Current", "https://www.youtube.com/@bbsthecurrent","/images/bbs.png","color"],
     ["Bonac Beachcomber", "https://bonacbeachcomber.com/", "/images/newspaper.png","black"],
@@ -29,7 +28,6 @@ let removedLinks = [
     ["EH Databases", "https://sites.google.com/ehschools.org/ehhslibrary/databases?pli=1", "/images/database.png","black"],
     ["JSTOR", "https://www.jstor.org/", "/images/jstor.png","color"],
 
-    // Google Suite Tools
     ["YouTube", "https://www.youtube.com/", "/images/youtube.png","color"],
     ["Translate", "https://translate.google.com/", "/images/googleTranslate.png","color"],
     ["Docs", "https://docs.google.com/document/u/0/", "/images/docs.png","color"],
@@ -38,11 +36,9 @@ let removedLinks = [
     ["Keep", "https://keep.google.com/u/0/", "/images/keep.png","color"],
     ["Calendar", "https://calendar.google.com/calendar/u/0/r", "/images/calendar.png","color"],
     
-    // News
     ["NY Times", "https://www.nytimes.com/", "/images/nyTimes.png","black"],
     ["Weather", "https://weather.com/en-BZ/weather/tenday/l/11937:4:US", "/images/weather.png","black"],
     
-    // Science
     ["Kami", "https://web.kamihq.com/web/viewer.html", "/images/kami.png","color"],
     ["EdPuzzle", "https://edpuzzle.com/", "/images/edpuzzle.png","color"],
     ["Castle Learning", "https://cl.castlelearning.com/Review/CLO/Account/LogOn", "/images/castleLearning.png","color"],
@@ -58,26 +54,21 @@ let removedLinks = [
     ["AP Study Guides", "https://library.fiveable.me/", "/images/fiveable.png","color"],
     ["AP Score Calculator", "https://www.albert.io/blog/ap-score-calculators/","/images/albert.png","color"],
 
-    // Educational Games/Tools
     ["Common App", "https://apply.commonapp.org/dashboard", "/images/commonApp.png","color"],
     ["EdX", "https://home.edx.org/", "/images/edX.png","black"],
     ["Udemy", "https://www.udemy.com/", "/images/udemy.png","black"],
     ["Typing Club", "https://www.typingclub.com/sportal/", "/images/typingClub.png","color"],
 
-    // Music
     ["Sight Reading", "https://www.sightreadingfactory.com/sight-reading", "/images/sightReading.png","black"],
     ["Spotify", "https://open.spotify.com/", "/images/spotify.png","color"],
     
-    //Phootgraphy and Art
     ["Pixlr", "https://pixlr.com/", "/images/pixlr.png","color"],
     ["Img BG Remover", "https://www.remove.bg/", "/images/removeBG.png","black"],
     
-    // Math and Calculator Tools
     ["Symbolab", "https://www.symbolab.com/", "/images/symbolab.png","color"],
     ["WolframAlpha", "https://www.wolframalpha.com/", "/images/wolframAlpha.png","color"],
     ["Desmos", "https://www.desmos.com/calculator", "/images/desmos.png","color"],
 
-    // Coding/Computer Science
     ["GitHub", "https://github.com/", "/images/github.png","black"],
     ["Code HS", "https://codehs.com/sections/3059537", "/images/codeHS.png","color"],
     ["Code.org", "https://studio.code.org/home", "/images/code.png","black"],
@@ -85,7 +76,7 @@ let removedLinks = [
     ["W3schools", "https://www.w3schools.com/", "/images/w3schools.png","color"],
     ["Tinkercad", "https://www.tinkercad.com/dashboard","/images/tinkercad.png","color"],
     ["Astromech", "http://astromech.net/", "/images/astromech.png","color"],
-    // Live Classes and educational games
+
     ["Quizlet", "https://quizlet.com/latest", "/images/quizlet.png","color"],
     ["Kahoot", "https://kahoot.it/", "/images/kahoot.png","color"],
     ["Blooket", "https://play.blooket.com/play", "/images/blooket.png","color"],
@@ -95,13 +86,11 @@ let removedLinks = [
     ["Wordle","https://www.nytimes.com/games/wordle/index.html", "/images/wordle.png","color"],
     ["Seterra", "https://www.seterra.com/", "/images/seterra.png","color"],
 
-    // Study Guides and Online Learning Platforms
     ["SparkNotes", "https://www.sparknotes.com/", "/images/sparknotes.png","color"],
     ["Shmoop", "https://www.shmoop.com/", "/images/shmoop.png","color"],
     ["Brainly", "https://brainly.com/", "/images/brainly.png","black"],
     ["Course Hero", "https://www.coursehero.com/", "/images/courseHero.png","color"],
 
-    //YouTube Channels
     ["CrashCourse", "https://www.youtube.com/@crashcourse", "/images/crashCourse.png","color"],
     ["Heimler's History", "https://www.youtube.com/@heimlershistory", "/images/heilmer.png","color"],
     ["Organic Chemistry Tutor", "https://www.youtube.com/@theorganicchemistrytutor", "/images/organicChemistryTutor.png","color"],
@@ -113,7 +102,7 @@ let removedLinks = [
     ];
 
 const checkbox = document.getElementById("addToTopCheckbox");
-let isChecked = false; // set to unchecked by default
+let isChecked = false; 
 let hasCheckedAttribute = checkbox.hasAttribute("checked");
 checkbox.checked = isChecked;
 
@@ -310,7 +299,7 @@ function populateTable(tbody, links, addedTable, isDarkMode) {
     const td = document.createElement("td");
     const div = document.createElement("div");
     const img = document.createElement("img");
-    const a = document.createElement("a"); // Create a new 'a' element
+    const a = document.createElement("a");
     const button = document.createElement("button");
     button.setAttribute("data-ignore", "true");
 
@@ -393,7 +382,7 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
     return;
   }
 
-  const movedLink = [linkName, url, image, lightDarkMode]; // Get the correct link data
+  const movedLink = [linkName, url, image, lightDarkMode]; 
   fromLinks.splice(index, 1);
 
   const addToTopCheckbox = document.getElementById("addToTopCheckbox");
@@ -426,7 +415,6 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
   const isDarkMode = document.documentElement.classList.contains("dark-mode");
   const darkModeClass = 'dark-mode';
 
-  // Add or remove dark-mode class depending on the lightDarkMode value
   if (isDarkMode && lightDarkMode === "black") {
     tr.querySelector("img").classList.add(darkModeClass);
   } else {
@@ -485,8 +473,6 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
     });
   
     loadTableData();
-  
-    // Clear the form inputs for the next use.
     addLinkForm.reset();
   });
   
@@ -494,7 +480,6 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
   const expandButton = document.getElementById('expandButton');
   const formContainer = document.getElementById('add-link-form-container');
   
-  // Load state from storage
   chrome.storage.sync.get('formVisible', (data) => {
     if (data.formVisible) {
       formContainer.classList.add('visible');
@@ -506,21 +491,15 @@ async function moveRow(fromTable, toTable, tr, fromLinks, toLinks) {
   });
   
   expandButton.addEventListener('click', () => {
-    // Check if form is visible
     if(formContainer.classList.contains('visible')) {
-      // Hide form
       formContainer.classList.remove('visible');
-      expandButton.innerText = "+ Custom Link";  // Change button text to '+'
+      expandButton.innerText = "+ Custom Link";  
       
-      // Save state to storage
       chrome.storage.sync.set({formVisible: false});
     } else {
-      // Show form
       formContainer.classList.add('visible');
-      expandButton.innerText = "↑ Custom Link";  // Change button text to '↑'
-      
-      // Save state to storage
-      chrome.storage.sync.set({formVisible: true});
+      expandButton.innerText = "↑ Custom Link";
+            chrome.storage.sync.set({formVisible: true});
     }
   });
   

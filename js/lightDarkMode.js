@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-  // Create an object to store the CSS properties
   let cssProperties = {};
 
   if (isDarkMode) {
@@ -34,22 +33,18 @@ document.addEventListener('DOMContentLoaded', function() {
     cssProperties = {
       '--background-color': '#fbf9fa',
       '--background-dark-color': '#f2f2f2',
-      '--border-color': '#2c2124',// #2b2024
+      '--border-color': '#2c2124',
       '--border-eh-color': 'gray',
-      '--text-color': '#2c2124',// #141010
+      '--text-color': '#2c2124',
       '--title-color': '#7A0C0D',
       '--blue-time-color': '#214fc6',
       '--grey-time-color': '#595959'
     };
   }
 
-  // Save the CSS properties object to the Chrome Extension storage
   chrome.storage.sync.set({ cssProperties }, () => { });
-  // Retrieve the CSS properties object from the Chrome Extension storage
   chrome.storage.sync.get(['cssProperties'], (result) => {
     const cssProperties = result.cssProperties;
-
-    // Set the CSS properties on the root element
     const rootStyles = document.documentElement.style;
     for (const [property, value] of Object.entries(cssProperties)) {
       rootStyles.setProperty(property, value);
@@ -63,11 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     imagesObserver = observeImages(isDarkMode);
 
-  // Get the lightDarkModeImage element
   const lightDarkModeImage = document.getElementById('lightDarkModeImage');
   const titleImage = document.getElementById('titleImage');
 
-  // Update the image source based on the dark mode state
   if (isDarkMode) {
       lightDarkModeImage.setAttribute('src', '/images/lightBulb.png');
       titleImage.setAttribute('src', '/images/lightSimpleBonac128.png');
@@ -127,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function() {
     applyDarkMode(newMode === 'dark');
     chrome.storage.sync.set({ mode: newMode }, function() {
     });
-    // Dispatch the custom event
     document.dispatchEvent(new CustomEvent('lightDarkModeChanged', { detail: newMode }));
   });
   

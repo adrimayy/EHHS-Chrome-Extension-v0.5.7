@@ -9,7 +9,6 @@ body{
     display: flex;
 	width: var(--link-container-width);
 	height: auto;
-	/*border: 2px solid green;*/
 	justify-content:space-evenly;
 	align-items:center;
 	flex-direction:column;
@@ -29,23 +28,23 @@ img{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     user-select: none;
-    -webkit-user-select: none; /* Safari, Chrome */
+    -webkit-user-select: none;
     -webkit-user-drag: none;
-    -khtml-user-select: none; /* Konqueror */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE */
-    user-select: none; /* CSS3 */
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 a{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    -webkit-user-select: none; /* Safari, Chrome */
+    -webkit-user-select: none; 
     -webkit-user-drag: none;
-    -khtml-user-select: none; /* Konqueror */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE */
-    user-select: none; /* CSS3 */
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -55,8 +54,8 @@ a{
     align-items:center;
     min-height:35px;
     min-width:35px;
-	/*border: 1px solid blue;*/
 	border-radius:8px;
+	border: 2px solid transparent; 
 }
 .optionsContainer:hover{
 	border: 2px solid var(--border-color); 
@@ -68,9 +67,6 @@ a{
     height:20px;
     width:20px;
 	object-fit:contain;
-
-	/*border: 1px solid blue;*/
-
 }
 .scheduleTitleText{
     font-size:26px;
@@ -79,26 +75,20 @@ a{
     color:var(--title-color);
     user-select: none;
     margin-right:50px;
-
 }
-
 
 .topButtonContainer {
     display: flex;
 	width: var(--link-container-width);
 	height: 60px;
-	/*border: 2px solid green;*/
 	justify-content:start;
 	align-items:left;
 	flex-direction:column;
-
 }
-
 
 .nameContainer {
     display: flex;
     width: 55px;
-    /*border: 2px solid #5A5959;*/
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -117,9 +107,6 @@ a{
     display: flex;
 	width: var(--link-container-width);
 	height: 90px;
-	/*margin-top:5px;*/
-	/*margin-bottom:5px;*/
-	/*border: 2px solid blue; */
 	justify-content:space-evenly;
 	align-items:center;
 	flex-direction:row;
@@ -128,8 +115,6 @@ a{
     display: flex;
    	width:85px;
 	height: 85px;
-	/*border: 2px solid #5A5959; */
-	/*background-color:#5A5959;*/
 	border-radius:8px;
 	justify-content:center;
 	align-items:center;
@@ -147,52 +132,45 @@ a{
     width:40px;
 	height: 40px;
 	margin:5px;
-	/*border: 2px solid #5A5959; */
 	object-fit:contain;
 }
 .feedbackContainer{
     display: flex;
 	width: var(--link-container-width);
 	height: 35px;
-	/* margin-top:5px; */
-	/*border: 2px solid gray; */
 	text-align:center;
 	align-items:center;
 	justify-content:right;
+	margin-top:5px;
 }
 .feedbackButton {
-    margin-left:var(--feedback-margin-left);
-    display: flex;
-   	min-width: 35px;
-	max-height: 35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:35px;
+    min-width:35px;
 	border-radius:8px;
-	align-items:center;
-	justify-content:center;
 	border: 2px solid transparent; 
-	text-decoration: none!important;
+	padding: 0px var(--feedback-margin-left) 0px var(--feedback-margin-left);
 
 }
 .feedbackButton:hover {
 	border: 2px solid var(--border-color); 
+	padding: 0px var(--feedback-margin-left) 0px var(--feedback-margin-left);
 }
 .feedbackButton:active {
 	border: 2px solid var(--title-color);
+	padding: 0px var(--feedback-margin-left) 0px var(--feedback-margin-left);
 }
 #feedbackText {
-    font-size:20px;
+    font-size:15px;
     text-align: left;
-    font-weight:540;
+    font-weight:bold;
 	line-height: 0;
 	margin-left:var(--feedback-margin-left);
-    color:var(--title-color);
+	color:var(--text-color);
     user-select: none;
-}
-#feedbackImage {
-    width: 22px;
-	height: 22px;
-	margin-left:5px;
-	margin-right:5px;
-	object-fit:contain;
+	text-decoration: none!important;
 
 }
 
@@ -201,7 +179,6 @@ a{
 	width: 180px;
 	height: 35px;
 	margin-top:7px;
-	/*border: 2px solid gray; */
 	border-radius:8px;
 	align-items:center;
 	justify-content:left;
@@ -297,7 +274,6 @@ a{
   .eastHamptonImage {
 	width: 32px;
 	height: 32px;
-	/* margin-right: 7px; */
 	margin-left: var(--ehhs-logo-margin-left);
   }
   

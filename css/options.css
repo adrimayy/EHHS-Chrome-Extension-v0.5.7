@@ -37,12 +37,12 @@ img{
     -webkit-box-sizing: border-box;
     user-select: none;
     user-zoom: none;
-    -webkit-user-select: none; /* Safari, Chrome */
+    -webkit-user-select: none;  
     -webkit-user-drag: none;
-    -khtml-user-select: none; /* Konqueror */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE */
-    user-select: none; /* CSS3 */
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
 }
 div{
     font-size: 20px;
@@ -59,12 +59,12 @@ a{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     user-zoom: none;
-    -webkit-user-select: none; /* Safari, Chrome */
+    -webkit-user-select: none;
     -webkit-user-drag: none;
-    -khtml-user-select: none; /* Konqueror */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE */
-    user-select: none; /* CSS3 */
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
 }
 p{
   font-family:Roboto, sans-serif;
@@ -197,16 +197,16 @@ td{
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
   background: #7A0C0D;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
   background: #7A0C0D;
   cursor: pointer;
@@ -238,7 +238,6 @@ td{
   color: #7A0C0D;
 }
 
-/* The container */
 .container {
   display: block;
   position: relative;
@@ -255,7 +254,6 @@ td{
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -264,7 +262,6 @@ td{
   width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
   position: absolute;
   top: 0;
@@ -275,29 +272,24 @@ td{
   transition: background-color 0.3s;
 }
 
-/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: gray;
 }
 
-/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #7A0C0D;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .container .checkmark:after {
   left: 9px;
   top: 5px;
@@ -319,7 +311,6 @@ td{
 	--text-color: #2b2024;
 	--title-color:#7A0C0D;
 }
-/* form-styles.css */
 
 #add-link-form {
   width: 90%;
@@ -376,16 +367,14 @@ td{
 #add-link-form button[type="submit"]:hover {
   background-color: #006400;
 }
-/* Initially hidden */
 #add-link-form-container {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease-out;
 }
 
-/* Visible after click */
 #add-link-form-container.visible {
-  max-height: 800px;  /* Adjust this value as per the height of your form */
+  max-height: 800px; 
   transition: max-height 1s ease-in;
 }
 
@@ -395,27 +384,27 @@ td{
   margin: auto;
   padding: 8px;
   border: none;
-  border-radius: 8px; /* makes the button round */
+  border-radius: 8px;
   background-color: var(--title-color);
   color: white;
   cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); /* shadow for a "raised" effect */
-  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* transition for a smooth "pressed" effect */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 #expandButton:hover {
-  background-color: #5A0307; /* a darker shade when hovered */
+  background-color: #5A0307; 
 }
 
 #expandButton:active {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16); /* the button appears "pressed" when active */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16); 
 }
 
 button.addLink {
   background: url('/images/add.svg') no-repeat;
   border: none;
   background-size: contain; 
-  background-position: center; /* to center the image */
+  background-position: center; 
   transition: transform 0.2s ease;
 }
 
@@ -426,7 +415,7 @@ button.removeLink {
   background: url('/images/remove.svg') no-repeat;
   border: none;
   background-size: contain; 
-  background-position: center; /* to center the image */
+  background-position: center;
   transition: transform 0.2s ease;
 }
 
@@ -435,21 +424,20 @@ button.removeLink:hover {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none; 
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
   justify-content: center;  
   align-items: center;
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -459,7 +447,6 @@ button.removeLink:hover {
   justify-content: center;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
