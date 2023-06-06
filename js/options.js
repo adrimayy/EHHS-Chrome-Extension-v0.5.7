@@ -3,7 +3,7 @@
 
   let addedLinks = [
     ["Drive", "https://drive.google.com/drive/u/0/", "/images/drive.png","color"],
-    ["Gmail", "https://mail.google.com/mail/u/0/#inbox", "/images/gmail.png","color"],
+    ["Gmail", "http://mail.ehschools.org/", "/images/gmail.png","color"],
     ["Classroom", "https://classroom.google.com/", "/images/classroom.png","color"],
 
     ["Schedule", "/html/clockPage.html", "/images/clock.png","black"],
