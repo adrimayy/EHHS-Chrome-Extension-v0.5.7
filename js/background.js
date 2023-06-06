@@ -49,4 +49,13 @@ function updateBadgeTextAndColor(timeLeft, inPeriod) {
   periodElement.style.backgroundColor = color;
 }
 
-setInterval(updateBadge, 1000);
+updateBadge();
+
+(function scheduleUpdate() {
+    const now = new Date();
+    const delay = 1000 - (now.getMilliseconds());
+    setTimeout(function() {
+        updateBadge();
+        scheduleUpdate();
+    }, delay);
+})();
