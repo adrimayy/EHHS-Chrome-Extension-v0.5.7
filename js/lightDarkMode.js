@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
       '--text-color': '#fbf9fa',
       '--title-color': '#a80038',
       '--blue-time-color': '#183a93',
-      '--grey-time-color': '#595959'
+      '--grey-time-color': '#353230'
     };
   } else {
     cssProperties = {
